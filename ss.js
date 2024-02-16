@@ -1,1 +1,162 @@
-function cdt(a){var e=a.split("-");return new Date(e[0],e[1]-1,e[2])}function sex(a){return"Perempuan"==a?"&#128105;":"Laki-Laki"==a?"&#128104;":""}function alm(a){return"-"==a?"":a+", "}function rs(a){return a.substring(a.indexOf("-")+1)}function rm(a){return"odp"==a?"ODP - Selesai Pengawasan":"odp1"==a?"ODP - Proses Pengawasan":"pdp"==a?"PDP - Non Covid-19":"pdp1"==a?"PDP - Follow Up":"pdp2"==a?"PDP - PDP Meninggal":"pos"==a?"Positif - Dirawat Pasien Positif":"pos1"==a?"Positif - Meninggal":"Positif - Sembuh"}$(document).ready(function(){var a=[];$.ajax({url:"https://cdn.software-mirrors.com/covid/kab.json",jsonpCallback:"kab",dataType:"jsonp",success:function(e){a.push(e),$.each(e,function(a,e){var t="<option value='"+a+"'>"+a+"</option>";$("#kabss").append(t)})}}).done(function(){t("Total"),$("#kabss").val("Total"),$("#kabss").change(function(){var a=$(this).val();t(a),"Total"===a?(a="",$(".tsd").hide()):$(".tsd").hide().show(),$("#pos table").dataTable().fnFilter(a),$("#odp table").dataTable().fnFilter(a),$("#pdp table").dataTable().fnFilter(a)})});CanvasJS.addColorSet("gr",["#00F","#0F4","#844","#f00","#f80","#ff0","#444","#484"]);var e={animationEnabled:!0,colorSet:"gr",axisX:{valueFormatString:"DD-MMM",labelFontSize:12,crosshair:{enabled:!0}},axisY:[{title:"Positif",labelFontSize:12,gridDashType:"longDashDotDot"},{title:"PDP",labelFontSize:12}],axisY2:{title:"ODP",labelFontSize:12},toolTip:{shared:!0},legend:{cursor:"pointer",itemclick:function(a){void 0===a.dataSeries.visible||a.dataSeries.visible?a.dataSeries.visible=!1:a.dataSeries.visible=!0,a.chart.render()},fontSize:14,verticalAlign:"top"},data:[{type:"stackedColumn",name:"Positif - Dirawat",fillOpacity:.5,showInLegend:!0,xValueType:"dateTime",dataPoints:[]},{type:"stackedColumn",name:"Positif - Sembuh",showInLegend:!0,fillOpacity:.5,xValueType:"dateTime",dataPoints:[]},{type:"stackedColumn",name:"Positif - Meninggal",showInLegend:!0,fillOpacity:.5,xValueType:"dateTime",dataPoints:[]},{type:"spline",name:"PDP - Dirawat",axisYIndex:1,showInLegend:!0,lineThickness:4,xValueType:"dateTime",dataPoints:[]},{type:"spline",name:"PDP - Sehat",axisYIndex:1,showInLegend:!0,lineThickness:4,xValueType:"dateTime",dataPoints:[]},{type:"spline",name:"PDP - Meninggal",axisYIndex:1,showInLegend:!0,lineThickness:4,xValueType:"dateTime",dataPoints:[]},{type:"line",name:"ODP - Proses",showInLegend:!0,lineThickness:4,axisYType:"secondary",xValueType:"dateTime",dataPoints:[]},{type:"line",name:"ODP - Selesai",showInLegend:!0,lineThickness:4,axisYType:"secondary",xValueType:"dateTime",dataPoints:[]}]};function t(t){var n=[],i=[],s=[],o=[],d=[],l=[],p=[],r=[];$.each(a[0][t],function(a,e){n.push({x:cdt(a),y:e.sodp}),i.push({x:cdt(a),y:e.podp}),s.push({x:cdt(a),y:e.spdp}),o.push({x:cdt(a),y:e.dpdp}),d.push({x:cdt(a),y:e.mpdp}),l.push({x:cdt(a),y:e.spos}),p.push({x:cdt(a),y:e.mpos}),r.push({x:cdt(a),y:e.ppos})}),e.data[7].dataPoints=n,e.data[6].dataPoints=i,e.data[4].dataPoints=s,e.data[3].dataPoints=o,e.data[5].dataPoints=d,e.data[1].dataPoints=l,e.data[2].dataPoints=p,e.data[0].dataPoints=r,new CanvasJS.Chart("chart",e).render()}$("#anu").hide(),$.each(["odp","pdp","pos"],function(a,e){$.ajax({url:"https://cdn.software-mirrors.com/covid/"+e+".json",jsonpCallback:e,dataType:"jsonp",success:function(a){var t=a.filter(a=>a.status===rm(e)).length,n=a.filter(a=>a.status===rm(e+"1")).length,i=a.filter(a=>a.status===rm(e+"2")).length,s="odp"==e?"(Proses Pengawasan: "+n+" | Selesai Pengawasan: "+t+")":"pdp"==e?"(Follow up: "+n+" | Non Covid-19: "+t+" | Meninggal: "+i+")":"(Dirawat: "+t+" | Sembuh: "+i+" | Meninggal: "+n+")";$("#"+e+" h2").append(Object.keys(a).length+"<br/><span class='ds'>"+s+"</span>").click(function(){$("#"+e+" .tsd").toggle(200)}),$.each(a,function(a,t){$("#"+e+" .isin").append("<tr><td>"+rs(t.status)+"</td><td>"+t.kab+"</td><td>"+alm(t.alamat)+t.kec+"</td><td>"+sex(t.sex)+"</td><td>"+t.umur+"</td><td>"+t.tgg+"</td></tr>")})}}).done(function(){$("#"+e+" table").DataTable({paging:!1,dom:'<"top"fi>'})})})});
+$(document).ready(function(){
+function toggleDataSeries(e) {
+	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	}
+	else {
+		e.dataSeries.visible = true;
+	}
+	e.chart.render();
+}
+var kabl=[];
+$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
+	kabl.push(res);
+	$.each(res,function(a,b){
+		var cd = "<option value='"+a+"'>"+a+"</option>";
+		$("#kabss").append(cd);
+	});
+}}).done(function(){
+	psk("Total");$("#kabss").val("Total");
+	$("#kabss").change(function(){
+		var ab = $(this).val();
+		psk(ab);
+		if(ab==="Total"){ab="";$(".tsd").hide();}else{$(".tsd").hide().show();}
+		$("#pos table").dataTable().fnFilter(ab);
+		$("#odp table").dataTable().fnFilter(ab);
+		$("#pdp table").dataTable().fnFilter(ab);
+	});
+});
+// CANVAS JS START
+var dps = [];
+CanvasJS.addColorSet("gr",["#00F","#0F4","#844","#f00","#f80","#ff0","#444","#484",]);
+var opt = {
+	animationEnabled: true,
+	colorSet: "gr",
+	axisX:{
+		valueFormatString:"D-M-Y H:mm",
+		labelFontSize:12,
+		crosshair:{enabled:!0},
+	},
+	axisY: [{
+			title: "Positif",
+			labelFontSize:12,
+			gridDashType:"longDashDotDot"
+		},{
+			title: "PDP",
+			labelFontSize:12,
+		}],
+	axisY2: {
+			title: "ODP",
+			labelFontSize:12,
+		},
+	toolTip:{shared:!0},legend:{cursor:"pointer",itemclick: toggleDataSeries,fontSize:14,verticalAlign: 'top'},
+	data: [{
+		type: "stackedColumn",
+		name: "Positif - Dirawat",
+		fillOpacity:.5,
+		showInLegend:!0,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "stackedColumn",
+		name: "Positif - Sembuh",
+		showInLegend:!0,
+		fillOpacity:.5,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "stackedColumn",
+		name: "Positif - Meninggal",
+		showInLegend:!0,
+		fillOpacity:.5,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "spline",
+		name: "PDP - Dirawat",
+		axisYIndex: 1,
+		showInLegend:!0,
+		lineThickness:4,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "spline",
+		name: "PDP - Sehat",
+		axisYIndex: 1,
+		showInLegend:!0,
+		lineThickness:4,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "spline",
+		name: "PDP - Meninggal",
+		axisYIndex: 1,
+		showInLegend:!0,
+		lineThickness:4,
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "line",
+		name: "ODP - Proses",
+		showInLegend:!0,
+		lineThickness:4,
+		axisYType: "secondary",
+		xValueType:"dateTime",
+		dataPoints: []
+	},
+	{
+		type: "line",
+		name: "ODP - Selesai",
+		showInLegend:!0,
+		lineThickness:4,
+		axisYType: "secondary",
+		xValueType:"dateTime",
+		dataPoints: []
+	}]
+}
+function psk(l){
+	var dpso=[];var dppo=[];var dpsp=[];var dpdp=[];var dpmp=[];var dps=[];var dpm=[];var dpp=[];
+	$.each(kabl[0][l],function(a,b){
+		dpso.push({x: cdt(a),y: b.sodp});
+		dppo.push({x: cdt(a),y: b.podp});
+		dpsp.push({x: cdt(a),y: b.spdp});
+		dpdp.push({x: cdt(a),y: b.dpdp});
+		dpmp.push({x: cdt(a),y: b.mpdp});
+		dps.push({x: cdt(a),y: b.spos});
+		dpm.push({x: cdt(a),y: b.mpos});
+		dpp.push({x: cdt(a),y: b.ppos});
+	});
+	opt.data[7].dataPoints = dpso;
+	opt.data[6].dataPoints = dppo;
+	opt.data[4].dataPoints = dpsp;
+	opt.data[3].dataPoints = dpdp;
+	opt.data[5].dataPoints = dpmp;
+	opt.data[1].dataPoints = dps;
+	opt.data[2].dataPoints = dpm;
+	opt.data[0].dataPoints = dpp;
+	(new CanvasJS.Chart("chart", opt)).render();
+}
+
+// CANVAS JS STOP
+var rul = ["odp","pdp","pos"];$("#anu").hide();
+$.each(rul, function(x,s){
+	$.ajax({url:"https://cdn.software-mirrors.com/covid/"+s+".json",jsonpCallback: s, dataType:"jsonp",success:function(res){
+	var oa = res.filter(value => value.status === rm(s)).length;
+	var ob = res.filter(value => value.status === rm(s+"1")).length;
+	var oc = res.filter(value => value.status === rm(s+"2")).length;
+	var sf = (s=="odp")?"(Proses Pengawasan: "+ob+" | Selesai Pengawasan: "+oa+")":(s=="pdp")?"(Follow up: "+ob+" | Non Covid-19: "+oa+" | Meninggal: "+oc+")":"(Dirawat: "+oa+" | Sembuh: "+oc+" | Meninggal: "+ob+")";
+	$("#"+s+" h2").append(Object.keys(res).length+"<br/><span class='ds'>"+sf+"</span>").click(function(){$("#"+s+" .tsd").toggle(200)});
+	$.each(res, function(a,b){
+		 $("#"+s+" .isin").append("<tr><td>"+rs(b.status)+"</td><td>"+b.kab+"</td><td>"+alm(b.alamat)+""+b.kec+"</td><td>"+sex(b.sex)+"</td><td>"+b.umur+"</td><td>"+b.tgg+"</td></tr>");
+		 });
+	}}).done(function(){
+		$("#"+s+" table").DataTable({"paging": false,"dom": '<"top"fi>'});
+	});
+});
+});
