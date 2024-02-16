@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>Covid-19 Sulawesi Selatan</title>
+<!-- <link rel='stylesheet' href="https://cdn.software-mirrors.com/dataTables.min.css"/> -->
+<style>
+.clear{clear:both}.isin tr.odd{background-color:#ddf}.isin tr.even{background-color:#eef}
+table{border-collapse:collapse;}.tsd{display:none}h2{background: #aab;margin: 10px;padding: 10px;border-radius: 20px;cursor:zoom-in;text-align:center}
+td{text-align:center;margin:5px;white-space:nowrap;padding:2px 5px;}.ds {font-size: large;color: #933;}
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdn.software-mirrors.com/dataTables.min.js"></script> -->
+<script type="text/javascript">
+function epo(e){
+const d = new Date(e);
+const ye = new Intl.DateTimeFormat('id', { year: 'numeric' }).format(d)
+const mo = new Intl.DateTimeFormat('id', { month: 'short' }).format(d)
+const da = new Intl.DateTimeFormat('id', { day: '2-digit' }).format(d)
+return da+" "+mo+" "+ye;
+}
+function cdt(e){
+	var re=e.split("-");
+	return new Date(re[0], re[1] - 1, re[2]);
+}
+function sex(e){
+	return (e=="Perempuan")?"&#128105;":(e=="Laki-Laki")?"&#128104;":"";
+}
+
+function alm(e){
+	return (e=="-")?"":e+", ";
+}
+
+function rms(str){
+	return str.substring(str.indexOf("-") + 1);
+}
+
+function rm(e){
+	return (e=="odp")?"ODP - Selesai Pengawasan":(e=="odp1")?"ODP - Proses Pengawasan":(e=="pdp")?"PDP - Sehat":(e=="pdp1")?"PDP - Dirawat PDP":(e=="pdp2")?"PDP - PDP Meninggal":(e=="pos")?"Positif - Dirawat Pasien Positif":(e=="pos1")?"Positif - Meninggal":"Positif - Sembuh";
+}
+$(document).ready(function(){
+var kabl=[];
+$.ajax({url:"https://cdn.software-mirrors.com/covid/kab.json",jsonpCallback: "kab", dataType:"jsonp",success:function(res){
+	kabl.push(res);
+	var dpdp=[];var dpdps=[];
+	$.each(res,function(a,b){
+		var cd = "<option value='"+a+"'>"+a+"</option>";
+		$("#kabss").append(cd);
+		dpdps.push(b);
+		$.each(b,function(d,e){
+			
+		});
+	});
+	dpdp['total']=dpdps;
+	var total = kabl.concat(dpdp);
+	$("#kabss").prepend('<option selected value="total">Total</option>');
+}}).done(function(){
+	$("#kabss").change(function(){
+		var ab = $(this).val();
+		psk(ab);
+	});
+});
+console.log(kabl);
+});
+</script>
+</head>
+<body style="font:large arial;background:#fefefe">
+<h1 style="text-align:center">Covid Sul-sel</h1>
+<div id="kabs" style="width: 98%;margin:20px"><label for="kabss">Pilih grafik:</label><select id="kabss" name="kabss"></select></div>
+</body>
+</html>
