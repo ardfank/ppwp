@@ -105,7 +105,7 @@ function tt(k){
 function rr(){
 	var ab = $('#kabss').val();
 	const tn = Date.now();
-	$.ajax({url:"https://sa.ya/squid/ppwp/ppwp.json",dataType:"json",success:function(res){
+	$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
 			var ls = Object.keys(res).pop();
 			var amin=parseInt(res[ls][ab][0]);
 			var pg=parseInt(res[ls][ab][1]);
