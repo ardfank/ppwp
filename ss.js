@@ -95,12 +95,13 @@ function tt(k){
 	$("#pos .isin").html("");
 	var ls = Object.keys(k).pop();
 	$.each(k[ls],function(a,b){
-		var pa=Math.round((b[0]/(b[0]+b[1]+b[2]))*10000)/100;console.log(pa);
-		var pp=Math.round((b[1]/(b[0]+b[1]+b[2]))*10000)/100;
-		var pg=Math.round((b[2]/(b[0]+b[1]+b[2]))*10000)/100;
-		$("#pos .isin").append("<tr><td>"+a+"</td><td><span data-order="+pa+" class='p'>"+pa+"%</span><br/>"+b[0]+"</td><td><span class='p'>"+pp+"%</span><br/>"+b[1]+"</td><td><span class='p'>"+pg+"%</span><br/>"+b[2]+"</td><td>"+(b[0]+b[1]+b[2])+"</td></tr>");
+		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;
+		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
+		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
+		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
+		$("#pos .isin").append("<tr><td>"+a+"</td><td><span data-order="+pa+" class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 	});
-	$("#pos table").DataTable({"paging": false,"dom": '<"top"fi>'});
+	$("#pos table").DataTable({"paging": false,"dom": '<"top"f>'});
 }
 function rr(){
 	var ab = $('#kabss').val();
