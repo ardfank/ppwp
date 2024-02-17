@@ -1,10 +1,3 @@
-function dtr(){
-	$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
-			console.log(Object.keys(res).pop());
-		}
-	});
-}
-// $(document).ready(function(){
 prov=JSON.parse('{"1":"total","11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIMEWA YOGYAKARTA","31":"DKI JAKARTA","75":"GORONTALO","15":"JAMBI","32":"JAWA BARAT","33":"JAWA TENGAH","35":"JAWA TIMUR","61":"KALIMANTAN BARAT","63":"KALIMANTAN SELATAN","62":"KALIMANTAN TENGAH","64":"KALIMANTAN TIMUR","65":"KALIMANTAN UTARA","19":"KEPULAUAN BANGKA BELITUNG","21":"KEPULAUAN RIAU","18":"LAMPUNG","99":"Luar Negeri","81":"MALUKU","82":"MALUKU UTARA","52":"NUSA TENGGARA BARAT","53":"NUSA TENGGARA TIMUR","91":"P A P U A","92":"PAPUA BARAT","96":"PAPUA BARAT DAYA","95":"PAPUA PEGUNUNGAN","93":"PAPUA SELATAN","94":"PAPUA TENGAH","14":"RIAU","76":"SULAWESI BARAT","73":"SULAWESI SELATAN","72":"SULAWESI TENGAH","74":"SULAWESI TENGGARA","71":"SULAWESI UTARA","13":"SUMATERA BARAT","16":"SUMATERA SELATAN","12":"SUMATERA UTARA"}');
 function toggleDataSeries(e) {
 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
@@ -32,6 +25,8 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 		$("#odp table").dataTable().fnFilter(ab);
 		$("#pdp table").dataTable().fnFilter(ab);
 	});
+	tt(kabl);
+	// $("#pos table").DataTable({"paging": false,"dom": '<"top"fi>'});
 });
 // CANVAS JS START
 var dps=[];var dpm=[];var dpp=[];
@@ -61,10 +56,8 @@ var opt = {
 	data: [{
 		type: "spline",
 		name: "AMIN",
-		fillOpacity:.5,
 		showInLegend:!0,
 		xValueType:"dateTime",
-		// toolTipContent: "{y} {label1}",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
 		dataPoints: []
 	},
@@ -72,9 +65,7 @@ var opt = {
 		type: "spline",
 		name: "PRAGIB",
 		showInLegend:!0,
-		fillOpacity:.5,
 		xValueType:"dateTime",
-		// toolTipContent: "{y} {label1}",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
 		dataPoints: []
 	},
@@ -82,9 +73,7 @@ var opt = {
 		type: "spline",
 		name: "GAMA",
 		showInLegend:!0,
-		fillOpacity:.5,
 		xValueType:"dateTime",
-		// toolTipContent: "{y} {label1}",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
 		dataPoints: []
 	}]
@@ -101,14 +90,26 @@ function psk(l){
 	opt.data[2].dataPoints = dpp;
 	(new CanvasJS.Chart("chart", opt)).render();
 }
+function tt(k){
+	$("#pos table").DataTable().clear().destroy();
+	$("#pos .isin").html("");
+	var ls = Object.keys(k).pop();
+	$.each(k[ls],function(a,b){
+		var pa=Math.round((b[0]/(b[0]+b[1]+b[2]))*10000)/100;console.log(pa);
+		var pp=Math.round((b[1]/(b[0]+b[1]+b[2]))*10000)/100;
+		var pg=Math.round((b[2]/(b[0]+b[1]+b[2]))*10000)/100;
+		$("#pos .isin").append("<tr><td>"+a+"</td><td><span data-order="+pa+" class='p'>"+pa+"%</span><br/>"+b[0]+"</td><td><span class='p'>"+pp+"%</span><br/>"+b[1]+"</td><td><span class='p'>"+pg+"%</span><br/>"+b[2]+"</td><td>"+(b[0]+b[1]+b[2])+"</td></tr>");
+	});
+	$("#pos table").DataTable({"paging": false,"dom": '<"top"fi>'});
+}
 function rr(){
 	var ab = $('#kabss').val();
 	const tn = Date.now();
-	$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
-		var ls = Object.keys(res).pop();
-		var amin=parseInt(res[ls][ab][0]);
-		var pg=parseInt(res[ls][ab][1]);
-		var gm=parseInt(res[ls][ab][2]);
+	$.ajax({url:"https://sa.ya/squid/ppwp/ppwp.json",dataType:"json",success:function(res){
+			var ls = Object.keys(res).pop();
+			var amin=parseInt(res[ls][ab][0]);
+			var pg=parseInt(res[ls][ab][1]);
+			var gm=parseInt(res[ls][ab][2]);
 			dps.push({x: tn,y: amin});
 			dpm.push({x: tn,y: pg});
 			dpp.push({x: tn,y: gm});
@@ -116,26 +117,8 @@ function rr(){
 			opt.data[1].dataPoints = dpm;
 			opt.data[2].dataPoints = dpp;
 			(new CanvasJS.Chart("chart", opt)).render();
+			tt(res);
 		}
 	});
 }
 setInterval(function () { rr() }, 900000);
-// dtr();
-// CANVAS JS STOP
-
-// var rul = ["odp","pdp","pos"];$("#anu").hide();
-// $.each(rul, function(x,s){
-// 	$.ajax({url:"https://cdn.software-mirrors.com/covid/"+s+".json",jsonpCallback: s, dataType:"jsonp",success:function(res){
-// 	var oa = res.filter(value => value.status === rm(s)).length;
-// 	var ob = res.filter(value => value.status === rm(s+"1")).length;
-// 	var oc = res.filter(value => value.status === rm(s+"2")).length;
-// 	var sf = (s=="odp")?"(Proses Pengawasan: "+ob+" | Selesai Pengawasan: "+oa+")":(s=="pdp")?"(Follow up: "+ob+" | Non Covid-19: "+oa+" | Meninggal: "+oc+")":"(Dirawat: "+oa+" | Sembuh: "+oc+" | Meninggal: "+ob+")";
-// 	$("#"+s+" h2").append(Object.keys(res).length+"<br/><span class='ds'>"+sf+"</span>").click(function(){$("#"+s+" .tsd").toggle(200)});
-// 	$.each(res, function(a,b){
-// 		 $("#"+s+" .isin").append("<tr><td>"+rs(b.status)+"</td><td>"+b.kab+"</td><td>"+alm(b.alamat)+""+b.kec+"</td><td>"+sex(b.sex)+"</td><td>"+b.umur+"</td><td>"+b.tgg+"</td></tr>");
-// 		 });
-// 	}}).done(function(){
-// 		$("#"+s+" table").DataTable({"paging": false,"dom": '<"top"fi>'});
-// 	});
-// });
-// });
