@@ -37,7 +37,6 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
-    theme: 'light2',
 	animationEnabled: false,
 	colorSet: "gr",
 	axisX:{
