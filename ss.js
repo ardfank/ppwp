@@ -50,7 +50,7 @@ var opt = {
 			labelFontSize:12,
 		},
 	toolTip:{shared:!0,contentFormatter: function (e) {
-				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x[1],'DD-MM-YY H:mm') +"<br/>";
+				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MM-YY H:mm') +"<br/>";
 				for (var i = 0; i < e.entries.length; i++) {
 					content += e.entries[i].dataSeries.name + " " + "<strong>" + e.entries[i].dataPoint.y + "</strong>";
 					content += "<br/>";
