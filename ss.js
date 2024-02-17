@@ -35,7 +35,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 });
 // CANVAS JS START
 var dps=[];var dpm=[];var dpp=[];
-CanvasJS.addColorSet("gr",["#00F","#8bF","#F00"]);
+CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
     theme: 'light2',
 	animationEnabled: false,
@@ -50,10 +50,12 @@ var opt = {
 			labelFontSize:12,
 		},
 	toolTip:{shared:!0,contentFormatter: function (e) {
+				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
 				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MM-YY H:mm') +"<br/>";
 				for (var i = 0; i < e.entries.length; i++) {
-					content += e.entries[i].dataSeries.name + " " + "<strong>" + e.entries[i].dataPoint.y + "</strong>";
-					content += "<br/>";
+					content +="<span style='color:"+e.entries[i].dataSeries.color+"'>";
+					content += e.entries[i].dataSeries.name + ": " + "<strong>" + e.entries[i].dataPoint.y + "</strong>";
+					content += " ("+Math.round((e.entries[i].dataPoint.y/sum)*10000)/100+"%)</span><br/>";
 				}
 				return content;
 			}},legend:{cursor:"pointer",itemclick: toggleDataSeries,fontSize:14,verticalAlign: 'top'},
@@ -118,7 +120,7 @@ function rr(){
 		}
 	});
 }
-setInterval(function () { rr() }, 120000);
+setInterval(function () { rr() }, 900000);
 // dtr();
 // CANVAS JS STOP
 
