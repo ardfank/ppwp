@@ -20,7 +20,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 	$("#kabss").change(function(){
 		var ab = $(this).val();
 		psk(ab);
-		if(ab==="Total"){ab="";$(".tsd").hide();}else{$(".tsd").hide().show();}
+		if(ab==="total"){ab="";}else{$(".tsd").hide().show();}
 		$("#pos table").dataTable().fnFilter(ab);
 		$("#odp table").dataTable().fnFilter(ab);
 		$("#pdp table").dataTable().fnFilter(ab);
@@ -101,7 +101,7 @@ function tt(k){
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		$("#pos .isin").append("<tr><td>"+a+"</td><td><span data-order="+pa+" class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 	});
-	$("#pos table").DataTable({"paging": false,"dom": '<"top"f>'});
+	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
 }
 function rr(){
 	var ab = $('#kabss').val();
