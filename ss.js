@@ -42,12 +42,13 @@ var opt = {
 	},
 	toolTip:{shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
-				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<hr/>";
+				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<table>";
 				for (var i = 0; i < e.entries.length; i++) {
-					content +="<span style='color:"+e.entries[i].dataSeries.color+"'>";
-					content += e.entries[i].dataSeries.name + ": " + "<strong>" + e.entries[i].dataPoint.y.toLocaleString() + "</strong>";
-					content += " ("+Math.round((e.entries[i].dataPoint.y/sum)*10000)/100+"%)</span><br/>";
+					content +="<tr style='border:1px dashed #333;color:"+e.entries[i].dataSeries.color+"'><td>";
+					content += e.entries[i].dataSeries.name + "</td><td><strong>" + e.entries[i].dataPoint.y.toLocaleString() + "</strong></td><td>";
+					content += "("+Math.round((e.entries[i].dataPoint.y/sum)*10000)/100+"%)</td></tr>";
 				}
+				content +="</table>";
 				return content;
 			}},legend:{cursor:"pointer",itemclick: toggleDataSeries,fontSize:14,verticalAlign: 'top'},
 	data: [{
