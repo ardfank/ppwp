@@ -20,13 +20,10 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 	$("#kabss").change(function(){
 		var ab = $(this).val();
 		psk(ab);
-		if(ab==="total"){ab="";}else{$(".tsd").hide().show();}
+		ab=(ab==="total")?"":ab;
 		$("#pos table").dataTable().fnFilter(ab);
-		$("#odp table").dataTable().fnFilter(ab);
-		$("#pdp table").dataTable().fnFilter(ab);
 	});
 	tt(kabl);
-	// $("#pos table").DataTable({"paging": false,"dom": '<"top"fi>'});
 });
 // CANVAS JS START
 var dps=[];var dpm=[];var dpp=[];
@@ -99,7 +96,11 @@ function tt(k){
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
-		$("#pos .isin").append("<tr><td>"+a+"</td><td><span data-order="+pa+" class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+		if(a==='total'){
+			$("#pos thead").html("<tr><th>PROVINSI<br/><br/>"+a+"</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>TOTAL<br/><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+		}else{
+			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
 }
