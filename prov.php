@@ -13,9 +13,9 @@ $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
 if($tol==$tlo && $pp['chart'][100025]==end($ppwp)['total'][0] && $pp['chart'][100026] == end($ppwp)['total'][1] && $pp['chart'][100027] == end($ppwp)['total'][2]){
         exit;
 }else{
-        $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027]);
+        $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
         foreach($pp['table'] as $a => $b){
-                $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027]);
+                $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027],$b['persen']);
         }
         if(isset($pp['table']) && isset($pp['chart'])){
                 file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
