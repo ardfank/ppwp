@@ -103,6 +103,9 @@ function tt(k){
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
+	var ab = $('#kabss').val();
+	ab=(ab==="total")?"":ab;
+	$("#pos table").dataTable().fnFilter(ab);
 }
 function rr(){
 	var ab = $('#kabss').val();
