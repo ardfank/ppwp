@@ -37,15 +37,15 @@ var opt = {
 		crosshair:{enabled:!0},
 	},
 	axisY: {
-			title: "SUARA",
-			labelFontSize:12,
-		},
+		crosshair:{enabled:!0},
+		labelFontSize:12,
+	},
 	toolTip:{shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
 				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MM-YY H:mm') +"<br/>";
 				for (var i = 0; i < e.entries.length; i++) {
 					content +="<span style='color:"+e.entries[i].dataSeries.color+"'>";
-					content += e.entries[i].dataSeries.name + ": " + "<strong>" + e.entries[i].dataPoint.y + "</strong>";
+					content += e.entries[i].dataSeries.name + ": " + "<strong>" + e.entries[i].dataPoint.y.toLocaleString() + "</strong>";
 					content += " ("+Math.round((e.entries[i].dataPoint.y/sum)*10000)/100+"%)</span><br/>";
 				}
 				return content;
