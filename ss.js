@@ -30,6 +30,7 @@ var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
 	animationEnabled: false,
+	zoomEnabled: true,
 	colorSet: "gr",
 	axisX:{
 		valueFormatString:"DD-MM-YY H:mm",
@@ -55,6 +56,7 @@ var opt = {
 		type: "spline",
 		name: "AMIN",
 		showInLegend:!0,
+		click: oo,
 		xValueType:"dateTime",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
 		dataPoints: []
@@ -62,6 +64,7 @@ var opt = {
 	{
 		type: "spline",
 		name: "PRAGIB",
+		click: oo,
 		showInLegend:!0,
 		xValueType:"dateTime",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
@@ -70,6 +73,7 @@ var opt = {
 	{
 		type: "spline",
 		name: "GAMA",
+		click: oo,
 		showInLegend:!0,
 		xValueType:"dateTime",
         xValueFormatString: "DD/MMM/YYYY HH:mm:ss",
@@ -133,4 +137,24 @@ function cc(l){
 	opt.data[1].type = l;
 	opt.data[2].type = l;
 	(new CanvasJS.Chart("chart", opt)).render();
+}
+function oo(e){
+	var ls=e.dataPoint.x;
+	$("#pos table").DataTable().clear().destroy();
+	$("#pos .isin").html("");
+	$.each(kabl[ls],function(a,b){
+		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
+		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
+		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
+		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
+		if(a==='total'){
+			$("#pos thead").html("<tr><th>PROVINSI<br/><br/>"+a+"</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+		}else{
+			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+		}
+	});
+	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
+	var ab = $('#kabss').val();
+	ab=(ab==="total")?"":ab;
+	$("#pos table").dataTable().fnFilter(ab);
 }
