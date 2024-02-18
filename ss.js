@@ -29,7 +29,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
-	animationEnabled: false,
+	backgroundColor: "#fda",
 	zoomEnabled: true,
 	colorSet: "gr",
 	axisX:{
@@ -41,12 +41,12 @@ var opt = {
 		crosshair:{enabled:!0},
 		labelFontSize:12,
 	},
-	toolTip:{shared:!0,contentFormatter: function (e) {
+	toolTip:{backgroundColor:"#fed",shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
 				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<table>";
 				for (var i = 0; i < e.entries.length; i++) {
-					content +="<tr style='border:1px dashed #333;color:"+e.entries[i].dataSeries.color+"'><td>";
-					content += e.entries[i].dataSeries.name + "</td><td><strong>" + e.entries[i].dataPoint.y.toLocaleString() + "</strong></td><td>";
+					content +="<tr style='font-weight:bold;border:1px solid #333;color:"+e.entries[i].dataSeries.color+"'><td>";
+					content += e.entries[i].dataSeries.name + "</td><td>" + e.entries[i].dataPoint.y.toLocaleString() + "</td><td>";
 					content += "("+Math.round((e.entries[i].dataPoint.y/sum)*10000)/100+"%)</td></tr>";
 				}
 				content +="</table>";
