@@ -123,3 +123,9 @@ function rr(){
 	});
 }
 setInterval(function () { rr() }, 900000);
+function cc(l){
+	opt.data[0].type = l;
+	opt.data[1].type = l;
+	opt.data[2].type = l;
+	(new CanvasJS.Chart("chart", opt)).render();
+}
