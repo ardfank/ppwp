@@ -140,6 +140,7 @@ function cc(l){
 }
 function oo(e){
 	var ls=e.dataPoint.x;
+	ls=(kabl[ls] !== undefined && kabl[ls] !== null )?ls:Object.keys(kabl).pop();
 	$("#pos table").DataTable().clear().destroy();
 	$("#pos .isin").html("");
 	$.each(kabl[ls],function(a,b){
