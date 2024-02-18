@@ -17,6 +17,8 @@ if($tol==$tlo && $pp['chart'][100025]==end($ppwp)['total'][0] && $pp['chart'][10
         foreach($pp['table'] as $a => $b){
                 $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027]);
         }
-        file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
+        if(isset($pp['table']) && isset($pp['chart'])){
+                file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
+        }
 }
 ?>
