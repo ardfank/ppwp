@@ -29,7 +29,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
-	backgroundColor: "#fda",
+	backgroundColor: "rgba(255,244,233,.7)",
 	zoomEnabled: true,
 	colorSet: "gr",
 	axisX:{
@@ -41,7 +41,7 @@ var opt = {
 		crosshair:{enabled:!0},
 		labelFontSize:12,
 	},
-	toolTip:{backgroundColor:"#fed",shared:!0,contentFormatter: function (e) {
+	toolTip:{backgroundColor: "rgba(255,244,233,.8)",shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
 				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<table>";
 				for (var i = 0; i < e.entries.length; i++) {
