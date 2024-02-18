@@ -42,7 +42,7 @@ var opt = {
 	},
 	toolTip:{shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
-				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MM-YY H:mm') +"<br/>";
+				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<hr/>";
 				for (var i = 0; i < e.entries.length; i++) {
 					content +="<span style='color:"+e.entries[i].dataSeries.color+"'>";
 					content += e.entries[i].dataSeries.name + ": " + "<strong>" + e.entries[i].dataPoint.y.toLocaleString() + "</strong>";
