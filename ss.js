@@ -103,7 +103,7 @@ function tt(k){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/><i>"+new Date(parseInt(ls)).toLocaleString('ID')+"</i></th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
@@ -153,7 +153,7 @@ function oo(e){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/><i>"+new Date(parseInt(ls)).toLocaleString('ID')+"</i></th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
