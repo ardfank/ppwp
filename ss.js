@@ -119,7 +119,7 @@ function tt(k){
 	$("#pos .isin").html("");
 	var ls = Object.keys(k).pop();
 	var ab = $('#kabss').val();
-	var ba = $('#kab').val();
+	var ba = $('#kab').val();ba=(ab==ba)?'':ba;
 	$.each(k[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
@@ -172,7 +172,7 @@ function oo(e){
 	ls=(kabl[ls] !== undefined && kabl[ls] !== null )?ls:Object.keys(kabl).pop();
 	$("#pos .isin").html("");
 	var ab = $('#kabss').val();
-	var ba = $('#kab').val();
+	var ba = $('#kab').val();ba=(ab==ba)?'':ba;
 	$.each(kabl[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
