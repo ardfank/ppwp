@@ -1,5 +1,6 @@
+prov=JSON.parse('{"1":"total","11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIMEWA YOGYAKARTA","31":"DKI JAKARTA","75":"GORONTALO","15":"JAMBI","32":"JAWA BARAT","33":"JAWA TENGAH","35":"JAWA TIMUR","61":"KALIMANTAN BARAT","63":"KALIMANTAN SELATAN","62":"KALIMANTAN TENGAH","64":"KALIMANTAN TIMUR","65":"KALIMANTAN UTARA","19":"KEPULAUAN BANGKA BELITUNG","21":"KEPULAUAN RIAU","18":"LAMPUNG","99":"Luar Negeri","81":"MALUKU","82":"MALUKU UTARA","52":"NUSA TENGGARA BARAT","53":"NUSA TENGGARA TIMUR","91":"P A P U A","92":"PAPUA BARAT","96":"PAPUA BARAT DAYA","95":"PAPUA PEGUNUNGAN","93":"PAPUA SELATAN","94":"PAPUA TENGAH","14":"RIAU","76":"SULAWESI BARAT","73":"SULAWESI SELATAN","72":"SULAWESI TENGAH","74":"SULAWESI TENGGARA","71":"SULAWESI UTARA","13":"SUMATERA BARAT","16":"SUMATERA SELATAN","12":"SUMATERA UTARA"}');
 var q=new URLSearchParams(window.location.search).get("q");
-var cq=(q!=null || q!=undefined)?q:'ppwp';
+var cq=(q!=null && q!=undefined && q!="")?q:'ppwp';console.log(cq);
 function toggleDataSeries(e) {
 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
 		e.dataSeries.visible = false;
@@ -10,14 +11,30 @@ function toggleDataSeries(e) {
 	e.chart.render();
 }
 var kabl;
+$.each(prov,function(a,b){
+	var cd = "<option value='"+b+"'>"+b+"</option>";
+	$("#kab").append(cd);
+});
 $.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
-	kabl=res;console.log(Object.keys(res)[0]);
+	kabl=res;
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
 		var cd = "<option value='"+a+"'>"+a+"</option>";
-		$("#kabss").append(cd);
+		if(cq=='ppwp'){
+			$("#kabss").append(cd).hide();
+		}else{
+			$("#kab").val(cq);
+			$("#kabss").append(cd).show();
+		}
 	});
+},error:function(){
+	window.location.href="./";
 }}).done(function(){
 	psk("total");$("#kabss").val("total");$("#anu").hide();
+	$("#kab").change(function(){
+		var ab = $(this).val();
+		ab=(ab==="total")?"#":ab;
+		window.location.href="?q="+ab;
+	});
 	$("#kabss").change(function(){
 		var ab = $(this).val();
 		psk(ab);
