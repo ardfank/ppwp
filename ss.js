@@ -10,7 +10,7 @@ function toggleDataSeries(e) {
 	e.chart.render();
 }
 var kabl;
-$.ajax({url:"https://ppwp.networkreverse.com/"+cq+".json",dataType:"json",success:function(res){
+$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
 	kabl=res;console.log(Object.keys(res)[0]);
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
 		var cd = "<option value='"+a+"'>"+a+"</option>";
@@ -119,7 +119,7 @@ function tt(k){
 function rr(){
 	var ab = $('#kabss').val();
 	var tn = Date.now();
-	$.ajax({url:"https://ppwp.networkreverse.com/"+cq+".json",dataType:"json",success:function(res){
+	$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
 			var ls = Object.keys(res).pop();
 			var kls = Object.keys(kabl).pop();
 			var amin=parseInt(res[ls][ab][0]);
