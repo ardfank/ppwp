@@ -1,6 +1,6 @@
 prov=JSON.parse('{"1":"total","11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIMEWA YOGYAKARTA","31":"DKI JAKARTA","75":"GORONTALO","15":"JAMBI","32":"JAWA BARAT","33":"JAWA TENGAH","35":"JAWA TIMUR","61":"KALIMANTAN BARAT","63":"KALIMANTAN SELATAN","62":"KALIMANTAN TENGAH","64":"KALIMANTAN TIMUR","65":"KALIMANTAN UTARA","19":"KEPULAUAN BANGKA BELITUNG","21":"KEPULAUAN RIAU","18":"LAMPUNG","99":"Luar Negeri","81":"MALUKU","82":"MALUKU UTARA","52":"NUSA TENGGARA BARAT","53":"NUSA TENGGARA TIMUR","91":"P A P U A","92":"PAPUA BARAT","96":"PAPUA BARAT DAYA","95":"PAPUA PEGUNUNGAN","93":"PAPUA SELATAN","94":"PAPUA TENGAH","14":"RIAU","76":"SULAWESI BARAT","73":"SULAWESI SELATAN","72":"SULAWESI TENGAH","74":"SULAWESI TENGGARA","71":"SULAWESI UTARA","13":"SUMATERA BARAT","16":"SUMATERA SELATAN","12":"SUMATERA UTARA"}');
 var q=new URLSearchParams(window.location.search).get("q");
-var cq=(q!=null && q!=undefined && q!="")?q:'ppwp';console.log(cq);
+var cq=(q!=null && q!=undefined && q!="")?q:'ppwp';
 function toggleDataSeries(e) {
 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
 		e.dataSeries.visible = false;
@@ -125,7 +125,7 @@ function tt(k){
 		if(a==='total'){
 			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
@@ -177,11 +177,22 @@ function oo(e){
 		if(a==='total'){
 			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
 	var ab = $('#kabss').val();
 	ab=(ab==="total")?"":ab;
 	$("#pos table").dataTable().fnFilter(ab);
+}
+function ff(ab){
+	event.preventDefault();
+	var ac=$("#kabss").val();
+	if(ab==ac){
+		$("#pos table").dataTable().fnFilter("");
+		$("#kabss").val("total");
+	}else{		
+		$("#pos table").dataTable().fnFilter(ab);
+		$("#kabss").val(ab);
+	}
 }
