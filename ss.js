@@ -35,16 +35,17 @@ var opt = {
 	axisX:{
 		valueFormatString:"DD-MM-YY H:mm",
 		labelFontSize:12,
-		crosshair:{snapToDataPoint: true,enabled:!0},
+		crosshair:{snapToDataPoint:true,enabled:!0},
 	},
 	axisY: {
-		crosshair:{enabled:!0},
-		interlacedColor: "rgba(255,222,200,.7)",
+		crosshair:{snapToDataPoint:true,enabled:!0},
+		interlacedColor: "rgba(255,233,211,.5)",
 		labelFontSize:12,
 	},
-	toolTip:{backgroundColor: "rgba(255,244,233,.8)",shared:!0,contentFormatter: function (e) {
+	toolTip:{shared:!0,contentFormatter: function (e) {
 				var sum=e.entries[0].dataPoint.y+e.entries[1].dataPoint.y+e.entries[2].dataPoint.y;
-				var content = CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm') +"<table>";
+				var pr=e.entries[0].dataPoint.label1;
+				var content = "<b>"+CanvasJS.formatDate(e.entries[0].dataPoint.x,'DD-MMM-YYYY HH:mm')+" ("+pr+"%)</b><table>";
 				for (var i = 0; i < e.entries.length; i++) {
 					content +="<tr style='font-weight:bold;border:1px solid #333;color:"+e.entries[i].dataSeries.color+"'><td>";
 					content += e.entries[i].dataSeries.name + "</td><td>" + e.entries[i].dataPoint.y.toLocaleString() + "</td><td>";
@@ -84,9 +85,10 @@ var opt = {
 function psk(l){
 	dps=[];dpm=[];dpp=[];
 	$.each(kabl,function(a,b){
-		dps.push({x: parseInt(a),y: b[l][0],label1: 'b'});
-		dpm.push({x: parseInt(a),y: b[l][1],label1: b});
-		dpp.push({x: parseInt(a),y: b[l][2],label1: 'a'});
+		var pr=(b[l][3]!==undefined)?b[l][3]:0;
+		dps.push({x: parseInt(a),y: b[l][0],label1: pr});
+		dpm.push({x: parseInt(a),y: b[l][1],label1: pr});
+		dpp.push({x: parseInt(a),y: b[l][2],label1: pr});
 	});
 	opt.data[0].dataPoints = dps;
 	opt.data[1].dataPoints = dpm;
