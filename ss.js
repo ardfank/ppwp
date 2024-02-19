@@ -136,7 +136,7 @@ function tt(k){
 function rr(){
 	var ab = $('#kabss').val();
 	var tn = Date.now();
-	$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
+	$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json?"+tn,dataType:"json",success:function(res){
 			var ls = Object.keys(res).pop();
 			var kls = Object.keys(kabl).pop();
 			var amin=parseInt(res[ls][ab][0]);
