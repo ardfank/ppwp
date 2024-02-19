@@ -20,11 +20,11 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",s
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
 		var cd = "<option value='"+a+"'>"+a+"</option>";
 		if(cq=='ppwp'){
-			$("#kabss").append(cd).hide();
+			$("#kab").val('total');
 		}else{
 			$("#kab").val(cq);
-			$("#kabss").append(cd).show();
 		}
+		$("#kabss").append(cd);
 	});
 },error:function(){
 	window.location.href="./";
