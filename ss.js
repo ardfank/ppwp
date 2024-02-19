@@ -191,8 +191,10 @@ function ff(ab){
 	if(ab==ac){
 		$("#pos table").dataTable().fnFilter("");
 		$("#kabss").val("total");
+		psk("total");
 	}else{		
 		$("#pos table").dataTable().fnFilter(ab);
 		$("#kabss").val(ab);
+		psk(ab);
 	}
 }
