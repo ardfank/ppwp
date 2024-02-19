@@ -103,7 +103,7 @@ function tt(k){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/><br/>"+a+"</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/><i>"+new Date(parseInt(ls)).toLocaleString('ID')+"</i></th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
@@ -118,21 +118,24 @@ function rr(){
 	const tn = Date.now();
 	$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
 			var ls = Object.keys(res).pop();
+			var kls = Object.keys(kabl).pop();
 			var amin=parseInt(res[ls][ab][0]);
 			var pg=parseInt(res[ls][ab][1]);
 			var gm=parseInt(res[ls][ab][2]);
-			dps.push({x: tn,y: amin});
-			dpm.push({x: tn,y: pg});
-			dpp.push({x: tn,y: gm});
-			opt.data[0].dataPoints = dps;
-			opt.data[1].dataPoints = dpm;
-			opt.data[2].dataPoints = dpp;
-			(new CanvasJS.Chart("chart", opt)).render();
-			tt(res);
+			if(ls===kls){				
+				dps.push({x: tn,y: amin});
+				dpm.push({x: tn,y: pg});
+				dpp.push({x: tn,y: gm});
+				opt.data[0].dataPoints = dps;
+				opt.data[1].dataPoints = dpm;
+				opt.data[2].dataPoints = dpp;
+				(new CanvasJS.Chart("chart", opt)).render();
+				tt(res);
+			}
 		}
 	});
 }
-setInterval(function () { rr() }, 900000);
+setInterval(function () { rr() }, 60000);
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
@@ -150,7 +153,7 @@ function oo(e){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/><br/>"+a+"</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/><i>"+new Date(parseInt(ls)).toLocaleString('ID')+"</i></th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td>"+a+"</td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
