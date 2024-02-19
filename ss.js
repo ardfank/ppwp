@@ -123,7 +123,7 @@ function rr(){
 			var pg=parseInt(res[ls][ab][1]);
 			var gm=parseInt(res[ls][ab][2]);
 			if(ls!==kls){
-				kbl=res;
+				kabl=res;
 				dps.push({x: tn,y: amin});
 				dpm.push({x: tn,y: pg});
 				dpp.push({x: tn,y: gm});
