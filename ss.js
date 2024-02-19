@@ -122,7 +122,8 @@ function rr(){
 			var amin=parseInt(res[ls][ab][0]);
 			var pg=parseInt(res[ls][ab][1]);
 			var gm=parseInt(res[ls][ab][2]);
-			if(ls===kls){				
+			if(ls!==kls){
+				console.log({ls,kls});
 				dps.push({x: tn,y: amin});
 				dpm.push({x: tn,y: pg});
 				dpp.push({x: tn,y: gm});
