@@ -40,6 +40,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",s
 		psk(ab);
 		ab=(ab==="total")?"":ab;
 		$("#pos table").dataTable().fnFilter(ab);
+		tt(kabl);
 	});
 	tt(kabl);
 });
@@ -117,19 +118,20 @@ function tt(k){
 	$("#pos table").DataTable().clear().destroy();
 	$("#pos .isin").html("");
 	var ls = Object.keys(k).pop();
+	var ab = $('#kabss').val();
+	var ba = $('#kab').val();
 	$.each(k[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
-	var ab = $('#kabss').val();
 	ab=(ab==="total")?"":ab;
 	$("#pos table").dataTable().fnFilter(ab);
 }
@@ -165,36 +167,37 @@ function cc(l){
 	(new CanvasJS.Chart("chart", opt)).render();
 }
 function oo(e){
+	$("#pos table").DataTable().clear().destroy();
 	var ls=e.dataPoint.x;
 	ls=(kabl[ls] !== undefined && kabl[ls] !== null )?ls:Object.keys(kabl).pop();
-	$("#pos table").DataTable().clear().destroy();
 	$("#pos .isin").html("");
+	var ab = $('#kabss').val();
+	var ba = $('#kab').val();
 	$.each(kabl[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>PROVINSI<br/>"+a+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
 	});
-	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
-	var ab = $('#kabss').val();
 	ab=(ab==="total")?"":ab;
+	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
 	$("#pos table").dataTable().fnFilter(ab);
 }
 function ff(ab){
 	event.preventDefault();
 	var ac=$("#kabss").val();
 	if(ab==ac){
-		$("#pos table").dataTable().fnFilter("");
 		$("#kabss").val("total");
+		$("#kabss").trigger('change');
 		psk("total");
 	}else{		
-		$("#pos table").dataTable().fnFilter(ab);
 		$("#kabss").val(ab);
+		$("#kabss").trigger('change');
 		psk(ab);
 	}
 }
