@@ -29,16 +29,17 @@ $.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:
 var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
-	backgroundColor: "rgba(255,244,233,.7)",
+	backgroundColor: "rgba(255,244,233,.8)",
 	zoomEnabled: true,
 	colorSet: "gr",
 	axisX:{
 		valueFormatString:"DD-MM-YY H:mm",
 		labelFontSize:12,
-		crosshair:{enabled:!0},
+		crosshair:{snapToDataPoint: true,enabled:!0},
 	},
 	axisY: {
 		crosshair:{enabled:!0},
+		interlacedColor: "rgba(255,222,200,.7)",
 		labelFontSize:12,
 	},
 	toolTip:{backgroundColor: "rgba(255,244,233,.8)",shared:!0,contentFormatter: function (e) {
