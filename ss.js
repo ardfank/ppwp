@@ -117,18 +117,19 @@ function tt(k){
 }
 function rr(){
 	var ab = $('#kabss').val();
-	const tn = Date.now();
+	var tn = Date.now();
 	$.ajax({url:"https://ppwp.networkreverse.com/ppwp.json",dataType:"json",success:function(res){
 			var ls = Object.keys(res).pop();
 			var kls = Object.keys(kabl).pop();
 			var amin=parseInt(res[ls][ab][0]);
 			var pg=parseInt(res[ls][ab][1]);
 			var gm=parseInt(res[ls][ab][2]);
+			var pr=res[ls][ab][3];
 			if(ls!==kls){
 				kabl=res;
-				dps.push({x: tn,y: amin});
-				dpm.push({x: tn,y: pg});
-				dpp.push({x: tn,y: gm});
+				dps.push({x: tn,y: amin,label1: pr});
+				dpm.push({x: tn,y: pg,label1: pr});
+				dpp.push({x: tn,y: gm,label1: pr});
 				opt.data[0].dataPoints = dps;
 				opt.data[1].dataPoints = dpm;
 				opt.data[2].dataPoints = dpp;
@@ -138,7 +139,7 @@ function rr(){
 		}
 	});
 }
-setInterval(function () { rr() }, 60000);
+setInterval(function () { rr() }, 90000);
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
