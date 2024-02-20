@@ -80,6 +80,7 @@ var opt = {
 	data: [{
 		type: "spline",
 		name: "AMIN",
+		lineThickness: 4,
 		showInLegend:!0,
 		click: oo,
 		xValueType:"dateTime",
@@ -89,6 +90,7 @@ var opt = {
 	{
 		type: "spline",
 		name: "PRAGIB",
+		lineThickness: 4,
 		click: oo,
 		showInLegend:!0,
 		xValueType:"dateTime",
@@ -98,6 +100,7 @@ var opt = {
 	{
 		type: "spline",
 		name: "GAMA",
+		lineThickness: 4,
 		click: oo,
 		showInLegend:!0,
 		xValueType:"dateTime",
