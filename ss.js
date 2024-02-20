@@ -162,7 +162,7 @@ function rr(){
 		}
 	});
 }
-setInterval(function () { rr() }, 9000);
+setInterval(function () { rr() }, 120000);
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
