@@ -16,7 +16,8 @@ $.each(prov,function(a,b){
 	var cd = "<option value='"+b+"'>"+bb+"</option>";
 	$("#kab").append(cd);
 });
-$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
+var tn = Date.now();
+$.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json?"+tn,dataType:"json",success:function(res){
 	kabl=res;
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
 		aa=(cq=='Luar Negeri' && a=='total')?'Pilih Negara':((cq=='ppwp' && a=='total')?'TOTAL':((a=='total')?'Pilih Kabupaten':a));
