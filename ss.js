@@ -19,7 +19,7 @@ $.each(prov,function(a,b){
 $.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
 	kabl=res;
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
-		aa=(cq=='Luar Negeri' && a=='total')?'Pilih Negara':((a=='total')?'Pilih Kabupaten':a);
+		aa=(cq=='Luar Negeri' && a=='total')?'Pilih Negara':((cq=='ppwp' && a=='total')?'TOTAL':((a=='total')?'Pilih Kabupaten':a));
 		var cd = "<option value='"+a+"'>"+aa+"</option>";
 		if(cq=='ppwp'){
 			$("#kab").val('total');
@@ -51,6 +51,7 @@ var dps=[];var dpm=[];var dpp=[];
 CanvasJS.addColorSet("gr",["#128","#38a","#F00"]);
 var opt = {
 	backgroundColor: "rgba(255,244,233,.8)",
+	animationEnabled: true,
 	zoomEnabled: true,
 	colorSet: "gr",
 	axisX:{
@@ -161,7 +162,7 @@ function rr(){
 		}
 	});
 }
-setInterval(function () { rr() }, 90000);
+setInterval(function () { rr() }, 9000);
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
