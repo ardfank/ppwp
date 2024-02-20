@@ -12,13 +12,15 @@ function toggleDataSeries(e) {
 }
 var kabl;
 $.each(prov,function(a,b){
-	var cd = "<option value='"+b+"'>"+b+"</option>";
+	bb=(b=='total')?'Pilih Provinsi':b;
+	var cd = "<option value='"+b+"'>"+bb+"</option>";
 	$("#kab").append(cd);
 });
 $.ajax({url:"https://ppwp.networkreverse.com/json/"+cq+".json",dataType:"json",success:function(res){
 	kabl=res;
 	$.each(kabl[Object.keys(res)[0]],function(a,b){
-		var cd = "<option value='"+a+"'>"+a+"</option>";
+		aa=(cq=='Luar Negeri' && a=='total')?'Pilih Negara':((a=='total')?'Pilih Kabupaten':a);
+		var cd = "<option value='"+a+"'>"+aa+"</option>";
 		if(cq=='ppwp'){
 			$("#kab").val('total');
 		}else{
