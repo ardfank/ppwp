@@ -132,10 +132,14 @@ function tt(k){
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
+		var pm=Math.max(pa,pg,pp);
+		pa=(pa==pm)?"<span class='pq'>"+pa+"%</span>":pa+"%";
+		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
+		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString()+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString()+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString()+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"%</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"%</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"%</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString()+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString()+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString()+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString()+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
