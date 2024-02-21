@@ -126,7 +126,7 @@ function tt(k){
 	$("#pos .isin").html("");
 	var ls = Object.keys(k).pop();
 	var ab = $('#kabss').val();
-	var ba = $('#kab').val();ba=(ab==ba)?'':ba;
+	var ba = (cq=='ppwp')?'':$('#kab').val();
 	$.each(k[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
@@ -137,7 +137,7 @@ function tt(k){
 		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
 		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
 		}
@@ -183,7 +183,7 @@ function oo(e){
 	ls=(kabl[ls] !== undefined && kabl[ls] !== null )?ls:Object.keys(kabl).pop();
 	$("#pos .isin").html("");
 	var ab = $('#kabss').val();
-	var ba = $('#kab').val();ba=(ab==ba)?'':ba;
+	var ba = (cq=='ppwp')?'':$('#kab').val();
 	$.each(kabl[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
@@ -194,7 +194,7 @@ function oo(e){
 		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
 		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+ab.toUpperCase()+"</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
 		}else{
 			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
 		}
