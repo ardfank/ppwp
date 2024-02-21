@@ -4,7 +4,8 @@ $prov='{"11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIM
 $prov=json_decode($prov,TRUE);
 for($i=0;$i<2;$i++){
     foreach($prov as $c => $d){
-        sleep(2);$tm = time()*1000;echo "====".date('r')." $d=====\n";
+        sleep(1);$tm = time()*1000;
+        echo "====".date('r')." $d=====\n";
         $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
         $pp1=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
         $pp=json_decode($pp,TRUE);
@@ -26,7 +27,8 @@ for($i=0;$i<2;$i++){
                 }
         }
     }
-	$tm = time()*1000;echo "====".date('r')." ppwp =====\n";
+	$tm = time()*1000;
+    echo "====".date('r')." ppwp =====\n";
 	$pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
 	$file=file_get_contents($path."/ppwp.json");
@@ -42,5 +44,6 @@ for($i=0;$i<2;$i++){
 					file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
 			}
 	}
+	sleep(30);
 }
 ?>
