@@ -5,7 +5,7 @@ $prov=json_decode($prov,TRUE);
 for($i=0;$i<1;$i++){
     foreach($prov as $c => $d){
         sleep(1);$tm = time()*1000;
-//        echo "====".date('r')." $d=====\n";
+        echo "====".date('r')." $d=====\n";
         $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
         $pp1=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
         $pp=json_decode($pp,TRUE);
@@ -28,7 +28,7 @@ for($i=0;$i<1;$i++){
         }
     }
 	$tm = time()*1000;
-//    echo "====".date('r')." ppwp =====\n";
+    echo "====".date('r')." ppwp =====\n";
 	$pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
 	$file=file_get_contents($path."/ppwp.json");
