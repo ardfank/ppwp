@@ -5,3 +5,51 @@ Already up to date.
 ===Thu Feb 22 02:00:39 PM WITA 2024 1st ===
 ====Thu, 22 Feb 2024 14:01:32 +0800 SUMATERA SELATAN=====
 ====Thu, 22 Feb 2024 14:01:33 +0800 SUMATERA UTARA=====
+[main 310c386] Auto  Thursday, 22-02-2024 14.01.43
+ 3 files changed, 9 insertions(+), 122 deletions(-)
+ rewrite cron.log (98%)
+To github.com:ardfank/ppwp.git
+   27496f9..310c386  main -> main
+From github.com:ardfank/ppwp
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+===Thu Feb 22 02:02:00 PM WITA 2024 2nd ===
+====Thu, 22 Feb 2024 14:02:01 +0800 ACEH=====
+====Thu, 22 Feb 2024 14:02:03 +0800 BALI=====
+====Thu, 22 Feb 2024 14:02:04 +0800 BANTEN=====
+====Thu, 22 Feb 2024 14:02:05 +0800 BENGKULU=====
+====Thu, 22 Feb 2024 14:02:07 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
+====Thu, 22 Feb 2024 14:02:08 +0800 DKI JAKARTA=====
+====Thu, 22 Feb 2024 14:02:09 +0800 GORONTALO=====
+====Thu, 22 Feb 2024 14:02:11 +0800 JAMBI=====
+====Thu, 22 Feb 2024 14:02:12 +0800 JAWA BARAT=====
+====Thu, 22 Feb 2024 14:02:13 +0800 JAWA TENGAH=====
+====Thu, 22 Feb 2024 14:02:15 +0800 JAWA TIMUR=====
+====Thu, 22 Feb 2024 14:02:16 +0800 KALIMANTAN BARAT=====
+====Thu, 22 Feb 2024 14:02:17 +0800 KALIMANTAN SELATAN=====
+====Thu, 22 Feb 2024 14:02:19 +0800 KALIMANTAN TENGAH=====
+====Thu, 22 Feb 2024 14:02:20 +0800 KALIMANTAN TIMUR=====
+====Thu, 22 Feb 2024 14:02:21 +0800 KALIMANTAN UTARA=====
+====Thu, 22 Feb 2024 14:02:23 +0800 KEPULAUAN BANGKA BELITUNG=====
+====Thu, 22 Feb 2024 14:02:24 +0800 KEPULAUAN RIAU=====
+====Thu, 22 Feb 2024 14:02:25 +0800 LAMPUNG=====
+====Thu, 22 Feb 2024 14:02:27 +0800 Luar Negeri=====
+PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 23
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 23
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 23
+====Thu, 22 Feb 2024 14:02:28 +0800 MALUKU=====
+====Thu, 22 Feb 2024 14:02:30 +0800 MALUKU UTARA=====
+====Thu, 22 Feb 2024 14:02:31 +0800 NUSA TENGGARA BARAT=====
+====Thu, 22 Feb 2024 14:02:32 +0800 NUSA TENGGARA TIMUR=====
+====Thu, 22 Feb 2024 14:02:33 +0800 P A P U A=====
+PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 23
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 23
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 23
+====Thu, 22 Feb 2024 14:02:36 +0800 PAPUA BARAT DAYA=====
+====Thu, 22 Feb 2024 14:02:42 +0800 RIAU=====
+====Thu, 22 Feb 2024 14:02:43 +0800 SULAWESI BARAT=====
+====Thu, 22 Feb 2024 14:02:45 +0800 SULAWESI SELATAN=====
+====Thu, 22 Feb 2024 14:02:46 +0800 SULAWESI TENGAH=====
+====Thu, 22 Feb 2024 14:02:48 +0800 SULAWESI UTARA=====
+====Thu, 22 Feb 2024 14:02:50 +0800 SUMATERA BARAT=====
+====Thu, 22 Feb 2024 14:02:53 +0800 ppwp =====
