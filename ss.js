@@ -133,13 +133,13 @@ function tt(k){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		var pm=Math.max(pa,pg,pp);
-		pa=(pa==pm)?"<span class='pq'>"+pa+"%</span>":pa+"%";
-		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
-		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
+		qa=(pa==pm)?" pq":"";
+		qp=(pp==pm)?" pq":"";
+		qg=(pg==pm)?" pq":"";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p"+qa+"'>"+pa+"%</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p"+qp+"'>"+pp+"%</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p"+qg+"'>"+pg+"%</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td data-sort='"+pa+"'><span class='p"+qa+"'>"+pa+"%</span><br/>"+b0.toLocaleString('id')+"</td><td data-sort='"+pp+"'><span class='p"+qp+"'>"+pp+"%</span><br/>"+b1.toLocaleString('id')+"</td><td data-sort='"+pg+"'><span class='p"+qg+"'>"+pg+"%</span><br/>"+b2.toLocaleString('id')+"</td><td data-sort='"+b3+"'><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
@@ -190,13 +190,13 @@ function oo(e){
 		var pp=(b1!=0)?((b1/(b0+b1+b2))*100).toFixed(2):0;
 		var pg=(b2!=0)?((b2/(b0+b1+b2))*100).toFixed(2):0;
 		var pm=Math.max(pa,pg,pp);
-		pa=(pa==pm)?"<span class='pq'>"+pa+"%</span>":pa+"%";
-		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
-		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
+		qa=(pa==pm)?" pq":"";
+		qp=(pp==pm)?" pq":"";
+		qg=(pg==pm)?" pq":"";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p"+qa+"'>"+pa+"%</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p"+qp+"'>"+pp+"%</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p"+qg+"'>"+pg+"%</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td data-sort='"+pa+"'><span class='p"+qa+"'>"+pa+"%</span><br/>"+b0.toLocaleString('id')+"</td><td data-sort='"+pp+"'><span class='p"+qp+"'>"+pp+"%</span><br/>"+b1.toLocaleString('id')+"</td><td data-sort='"+pg+"'><span class='p"+qg+"'>"+pg+"%</span><br/>"+b2.toLocaleString('id')+"</td><td data-sort='"+b3+"'><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
 		}
 	});
 	ab=(ab==="total")?"":ab;
@@ -210,7 +210,7 @@ function ff(ab){
 		$("#kabss").val("total");
 		$("#kabss").trigger('change');
 		psk("total");
-	}else{		
+	}else{
 		$("#kabss").val(ab);
 		$("#kabss").trigger('change');
 		psk(ab);
