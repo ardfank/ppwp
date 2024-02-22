@@ -1,113 +1,31 @@
-===Thu Feb 22 11:01:15 PM WITA 2024 Start ===
-===Thu Feb 22 11:01:16 PM WITA 2024 1st ===
-[main a1ecb98] Auto  Thursday, 22-02-2024 23.01.34
- 1 file changed, 2 insertions(+), 114 deletions(-)
- rewrite cron.log (100%)
-To github.com:ardfank/ppwp.git
-   f57382c..a1ecb98  main -> main
-===Thu Feb 22 11:01:37 PM WITA 2024 2nd ===
-[main 00c1af2] Auto  Thursday, 22-02-2024 23.01.55
- 1 file changed, 6 insertions(+)
-To github.com:ardfank/ppwp.git
-   a1ecb98..00c1af2  main -> main
-===Thu Feb 22 11:02:08 PM WITA 2024 3rdd ===
-====Thu, 22 Feb 2024 23:02:09 +0800 ACEH=====
-====Thu, 22 Feb 2024 23:02:10 +0800 BANTEN=====
-====Thu, 22 Feb 2024 23:02:10 +0800 BENGKULU=====
-====Thu, 22 Feb 2024 23:02:12 +0800 JAMBI=====
-====Thu, 22 Feb 2024 23:02:13 +0800 JAWA BARAT=====
-====Thu, 22 Feb 2024 23:02:13 +0800 JAWA TENGAH=====
-====Thu, 22 Feb 2024 23:02:13 +0800 JAWA TIMUR=====
-====Thu, 22 Feb 2024 23:02:19 +0800 NUSA TENGGARA BARAT=====
-====Thu, 22 Feb 2024 23:02:19 +0800 NUSA TENGGARA TIMUR=====
-====Thu, 22 Feb 2024 23:02:22 +0800 PAPUA SELATAN=====
+===Fri Feb 23 12:01:44 AM WITA 2024 Start ===
+===Fri Feb 23 12:01:49 AM WITA 2024 1st ===
+====Fri, 23 Feb 2024 00:01:50 +0800 BENGKULU=====
+====Fri, 23 Feb 2024 00:01:51 +0800 DKI JAKARTA=====
+====Fri, 23 Feb 2024 00:01:51 +0800 GORONTALO=====
+====Fri, 23 Feb 2024 00:01:52 +0800 JAMBI=====
+====Fri, 23 Feb 2024 00:01:52 +0800 JAWA BARAT=====
+====Fri, 23 Feb 2024 00:01:52 +0800 JAWA TENGAH=====
+====Fri, 23 Feb 2024 00:01:53 +0800 JAWA TIMUR=====
+====Fri, 23 Feb 2024 00:01:53 +0800 KALIMANTAN BARAT=====
+====Fri, 23 Feb 2024 00:01:54 +0800 KALIMANTAN SELATAN=====
+====Fri, 23 Feb 2024 00:01:54 +0800 KALIMANTAN TENGAH=====
+====Fri, 23 Feb 2024 00:01:54 +0800 KALIMANTAN TIMUR=====
+====Fri, 23 Feb 2024 00:01:55 +0800 KALIMANTAN UTARA=====
+====Fri, 23 Feb 2024 00:01:55 +0800 KEPULAUAN RIAU=====
+====Fri, 23 Feb 2024 00:01:56 +0800 LAMPUNG=====
+====Fri, 23 Feb 2024 00:01:56 +0800 Luar Negeri=====
 PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 23
 PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 23
 PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 23
-====Thu, 22 Feb 2024 23:02:23 +0800 RIAU=====
-====Thu, 22 Feb 2024 23:02:23 +0800 SULAWESI BARAT=====
-====Thu, 22 Feb 2024 23:02:24 +0800 SULAWESI SELATAN=====
-====Thu, 22 Feb 2024 23:02:24 +0800 SULAWESI TENGAH=====
-====Thu, 22 Feb 2024 23:02:24 +0800 SULAWESI TENGGARA=====
-====Thu, 22 Feb 2024 23:02:25 +0800 SULAWESI UTARA=====
-====Thu, 22 Feb 2024 23:02:26 +0800 SUMATERA SELATAN=====
-====Thu, 22 Feb 2024 23:02:26 +0800 SUMATERA UTARA=====
-===Thu Feb 22 11:02:27 PM WITA 2024 END ===
-
-
-[main 3df1d36] Auto  Thursday, 22-02-2024 23.02.27
- 19 files changed, 47 insertions(+), 18 deletions(-)
-To github.com:ardfank/ppwp.git
-   00c1af2..3df1d36  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-   3df1d36..be5d973  main       -> origin/main
-Updating 3df1d36..be5d973
-Fast-forward
- cron.sh | 9 ++-------
- 1 file changed, 2 insertions(+), 7 deletions(-)
-===Thu Feb 22 11:16:46 PM WITA 2024 1st ===
-====Thu, 22 Feb 2024 23:16:47 +0800 BALI=====
-====Thu, 22 Feb 2024 23:16:49 +0800 DKI JAKARTA=====
-====Thu, 22 Feb 2024 23:16:49 +0800 GORONTALO=====
-====Thu, 22 Feb 2024 23:16:52 +0800 KALIMANTAN BARAT=====
-====Thu, 22 Feb 2024 23:16:52 +0800 KALIMANTAN SELATAN=====
-====Thu, 22 Feb 2024 23:16:52 +0800 KALIMANTAN TENGAH=====
-====Thu, 22 Feb 2024 23:16:53 +0800 KALIMANTAN TIMUR=====
-====Thu, 22 Feb 2024 23:16:53 +0800 KALIMANTAN UTARA=====
-====Thu, 22 Feb 2024 23:16:54 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Thu, 22 Feb 2024 23:16:54 +0800 KEPULAUAN RIAU=====
-====Thu, 22 Feb 2024 23:16:55 +0800 LAMPUNG=====
-====Thu, 22 Feb 2024 23:16:55 +0800 Luar Negeri=====
-PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 23
-PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 23
-PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 23
-====Thu, 22 Feb 2024 23:16:56 +0800 MALUKU=====
-====Thu, 22 Feb 2024 23:16:56 +0800 MALUKU UTARA=====
-====Thu, 22 Feb 2024 23:17:03 +0800 SUMATERA BARAT=====
-====Thu, 22 Feb 2024 23:17:04 +0800 ppwp =====
-[main 2e93d16] Auto  Thursday, 22-02-2024 23.17.04
- 17 files changed, 47 insertions(+), 16 deletions(-)
-To github.com:ardfank/ppwp.git
-   be5d973..2e93d16  main -> main
-===Thu Feb 22 11:17:08 PM WITA 2024 2nd ===
-[main 480a8ea] Auto  Thursday, 22-02-2024 23.17.26
- 1 file changed, 5 insertions(+)
-To github.com:ardfank/ppwp.git
-   2e93d16..480a8ea  main -> main
-===Thu Feb 22 11:17:39 PM WITA 2024 3rdd ===
-===Thu Feb 22 11:18:04 PM WITA 2024 END ===
-
-
-[main 694dadc] Auto  Thursday, 22-02-2024 23.18.04
- 1 file changed, 8 insertions(+)
-To github.com:ardfank/ppwp.git
-   480a8ea..694dadc  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-Already up to date.
-===Thu Feb 22 11:31:49 PM WITA 2024 1st ===
-[main 730da0f] Auto  Thursday, 22-02-2024 23.32.07
- 1 file changed, 8 insertions(+)
-To github.com:ardfank/ppwp.git
-   694dadc..730da0f  main -> main
-===Thu Feb 22 11:32:30 PM WITA 2024 2nd ===
-===Thu Feb 22 11:32:48 PM WITA 2024 END ===
-
-
-[main f56be75] Auto  Thursday, 22-02-2024 23.32.48
- 1 file changed, 8 insertions(+)
-To github.com:ardfank/ppwp.git
-   730da0f..f56be75  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-Already up to date.
-===Thu Feb 22 11:46:49 PM WITA 2024 1st ===
-[main 96d2358] Auto  Thursday, 22-02-2024 23.47.04
- 1 file changed, 8 insertions(+)
-To github.com:ardfank/ppwp.git
-   f56be75..96d2358  main -> main
-===Thu Feb 22 11:47:27 PM WITA 2024 2nd ===
-===Thu Feb 22 11:47:41 PM WITA 2024 END ===
-
-
+====Fri, 23 Feb 2024 00:01:56 +0800 MALUKU=====
+====Fri, 23 Feb 2024 00:01:57 +0800 NUSA TENGGARA BARAT=====
+====Fri, 23 Feb 2024 00:01:57 +0800 NUSA TENGGARA TIMUR=====
+====Fri, 23 Feb 2024 00:02:00 +0800 RIAU=====
+====Fri, 23 Feb 2024 00:02:00 +0800 SULAWESI BARAT=====
+====Fri, 23 Feb 2024 00:02:01 +0800 SULAWESI SELATAN=====
+====Fri, 23 Feb 2024 00:02:01 +0800 SULAWESI TENGAH=====
+====Fri, 23 Feb 2024 00:02:02 +0800 SULAWESI UTARA=====
+====Fri, 23 Feb 2024 00:02:02 +0800 SUMATERA BARAT=====
+====Fri, 23 Feb 2024 00:02:02 +0800 SUMATERA SELATAN=====
+====Fri, 23 Feb 2024 00:02:03 +0800 SUMATERA UTARA=====
