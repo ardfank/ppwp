@@ -137,9 +137,9 @@ function tt(k){
 		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
 		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</td></tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
@@ -194,9 +194,9 @@ function oo(e){
 		pp=(pp==pm)?"<span class='pq'>"+pp+"%</span>":pp+"%";
 		pg=(pg==pm)?"<span class='pq'>"+pg+"%</span>":pg+"%";
 		if(a==='total'){
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</th></tr>");
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th><th>AMIN<br/><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</th><th>PRAGIB<br/><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</th><th>GAMA<br/><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</th><th>PROGRESS<br/><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</th></tr>");
 		}else{
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2).toLocaleString('id')+"</td></tr>");
+			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td><td><span class='p'>"+pa+"</span><br/>"+b0.toLocaleString('id')+"</td><td><span class='p'>"+pp+"</span><br/>"+b1.toLocaleString('id')+"</td><td><span class='p'>"+pg+"</span><br/>"+b2.toLocaleString('id')+"</td><td><span class='p'>"+b3+"%</span><br/>"+(b0+b1+b2)+"</td></tr>");
 		}
 	});
 	ab=(ab==="total")?"":ab;
