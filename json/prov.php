@@ -46,5 +46,6 @@ for($i=0;$i<1;$i++){
                 file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
         }
 	}
+	echo "\n\n";
 }
 ?>
