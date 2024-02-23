@@ -4,7 +4,7 @@ $prov='{"11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIM
 $prov=json_decode($prov,TRUE);
 for($i=0;$i<1;$i++){
     foreach($prov as $c => $d){
-        echo "====".date('r')." $d=====";
+        echo "\n====".date('r')." $d=====";
         $tm = time()*1000;
         $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
         $pp1=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
@@ -18,7 +18,7 @@ for($i=0;$i<1;$i++){
         $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
         $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
         if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
-            echo "====UP=====\n";
+            echo "====UP=====";
             $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
             foreach($pp['table'] as $a => $b){
                     $ppwp[$tm][$pro[$a]]=array($b[100025],$b[100026],$b[100027],$b['persen']);
@@ -29,7 +29,7 @@ for($i=0;$i<1;$i++){
         }
     }
 	$tm = time()*1000;
-    echo "====".date('r')." ppwp =====";
+    echo "\n====".date('r')." ppwp =====";
 	$pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
 	$file=file_get_contents($path."/ppwp.json");
