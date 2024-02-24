@@ -362,3 +362,54 @@ PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on 
 ====Sat, 24 Feb 2024 23:47:02 +0800 ppwp =====			====UP=====
 
 
+[main 398b804] Auto  Saturday, 24-02-2024 23.47.03
+ 40 files changed, 105 insertions(+), 39 deletions(-)
+To github.com:ardfank/ppwp.git
+   ccdbb0c..398b804  main -> main
+===Sat Feb 24 11:48:07 PM WITA 2024 2nd ===
+
+====Sat, 24 Feb 2024 23:48:07 +0800 ACEH=====
+====Sat, 24 Feb 2024 23:48:08 +0800 BALI=====
+====Sat, 24 Feb 2024 23:48:08 +0800 BANTEN=====
+====Sat, 24 Feb 2024 23:48:09 +0800 BENGKULU=====
+====Sat, 24 Feb 2024 23:48:09 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
+====Sat, 24 Feb 2024 23:48:10 +0800 DKI JAKARTA=====
+====Sat, 24 Feb 2024 23:48:10 +0800 GORONTALO=====
+====Sat, 24 Feb 2024 23:48:10 +0800 JAMBI=====
+====Sat, 24 Feb 2024 23:48:11 +0800 JAWA BARAT=====
+====Sat, 24 Feb 2024 23:48:11 +0800 JAWA TENGAH=====
+====Sat, 24 Feb 2024 23:48:12 +0800 JAWA TIMUR=====
+====Sat, 24 Feb 2024 23:48:12 +0800 KALIMANTAN BARAT=====
+====Sat, 24 Feb 2024 23:48:13 +0800 KALIMANTAN SELATAN=====
+====Sat, 24 Feb 2024 23:48:13 +0800 KALIMANTAN TENGAH=====
+====Sat, 24 Feb 2024 23:48:14 +0800 KALIMANTAN TIMUR=====
+====Sat, 24 Feb 2024 23:48:14 +0800 KALIMANTAN UTARA=====
+====Sat, 24 Feb 2024 23:48:14 +0800 KEPULAUAN BANGKA BELITUNG=====
+====Sat, 24 Feb 2024 23:48:15 +0800 KEPULAUAN RIAU=====
+====Sat, 24 Feb 2024 23:48:15 +0800 LAMPUNG=====
+====Sat, 24 Feb 2024 23:48:16 +0800 Luar Negeri=====
+====Sat, 24 Feb 2024 23:48:16 +0800 MALUKU=====
+====Sat, 24 Feb 2024 23:48:17 +0800 MALUKU UTARA=====
+====Sat, 24 Feb 2024 23:48:17 +0800 NUSA TENGGARA BARAT=====
+====Sat, 24 Feb 2024 23:48:17 +0800 NUSA TENGGARA TIMUR=====
+====Sat, 24 Feb 2024 23:48:18 +0800 P A P U A=====
+====Sat, 24 Feb 2024 23:48:18 +0800 PAPUA BARAT=====
+====Sat, 24 Feb 2024 23:48:19 +0800 PAPUA BARAT DAYA=====
+====Sat, 24 Feb 2024 23:48:19 +0800 PAPUA PEGUNUNGAN=====
+====Sat, 24 Feb 2024 23:48:20 +0800 PAPUA SELATAN=====
+====Sat, 24 Feb 2024 23:48:20 +0800 PAPUA TENGAH=====
+====Sat, 24 Feb 2024 23:48:21 +0800 RIAU=====
+====Sat, 24 Feb 2024 23:48:21 +0800 SULAWESI BARAT=====
+====Sat, 24 Feb 2024 23:48:22 +0800 SULAWESI SELATAN=====
+====Sat, 24 Feb 2024 23:48:22 +0800 SULAWESI TENGAH=====
+====Sat, 24 Feb 2024 23:48:22 +0800 SULAWESI TENGGARA=====
+====Sat, 24 Feb 2024 23:48:23 +0800 SULAWESI UTARA=====
+====Sat, 24 Feb 2024 23:48:23 +0800 SUMATERA BARAT=====
+====Sat, 24 Feb 2024 23:48:24 +0800 SUMATERA SELATAN=====
+====Sat, 24 Feb 2024 23:48:24 +0800 SUMATERA UTARA=====
+====Sat, 24 Feb 2024 23:48:24 +0800 ppwp =====
+
+
+===Sat Feb 24 11:48:25 PM WITA 2024 END ===
+
+
