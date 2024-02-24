@@ -1,400 +1,44 @@
-===Sun Feb 25 04:01:45 AM WITA 2024 Start ===
-===Sun Feb 25 04:01:45 AM WITA 2024 1st ===
+===Sun Feb 25 05:01:44 AM WITA 2024 Start ===
+===Sun Feb 25 05:01:44 AM WITA 2024 1st ===
 
-====Sun, 25 Feb 2024 04:01:45 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:01:45 +0800 BALI=====
-====Sun, 25 Feb 2024 04:01:46 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:01:46 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:01:46 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:01:47 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:01:47 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:01:47 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:01:48 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:01:48 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:01:49 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:01:49 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:01:49 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:01:50 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:01:50 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:01:50 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:01:50 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:01:51 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:01:51 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:01:51 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:01:52 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:01:52 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:01:52 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:01:53 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:01:53 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:01:53 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:01:54 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:01:54 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:01:54 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:01:55 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:01:55 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:01:55 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:01:56 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:01:56 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:01:56 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:01:57 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:01:57 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:01:57 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:01:58 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:01:58 +0800 ppwp =====
-
-[main 55bcfeb] Auto  Sunday, 25-02-2024 04.01.58
- 1 file changed, 44 insertions(+), 412 deletions(-)
- rewrite cron.log (99%)
-To github.com:ardfank/ppwp.git
-   1446b8f..55bcfeb  main -> main
-===Sun Feb 25 04:03:01 AM WITA 2024 2nd ===
-
-====Sun, 25 Feb 2024 04:03:01 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:03:02 +0800 BALI=====
-====Sun, 25 Feb 2024 04:03:02 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:03:02 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:03:03 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:03:03 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:03:03 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:03:04 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:03:04 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:03:04 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:03:05 +0800 JAWA TIMUR=====			====UP=====
-====Sun, 25 Feb 2024 04:03:05 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:03:05 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:03:06 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:03:06 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:03:07 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:03:07 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:03:07 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:03:08 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:03:08 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:03:08 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:03:09 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:03:09 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:03:09 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:03:10 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:03:10 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:03:10 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:03:11 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:03:11 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:03:11 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:03:12 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:03:12 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:03:12 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:03:13 +0800 SULAWESI TENGAH=====			====UP=====
-====Sun, 25 Feb 2024 04:03:13 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:03:13 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:03:14 +0800 SUMATERA BARAT=====			====UP=====
-====Sun, 25 Feb 2024 04:03:14 +0800 SUMATERA SELATAN=====			====UP=====
-====Sun, 25 Feb 2024 04:03:14 +0800 SUMATERA UTARA=====			====UP=====
-====Sun, 25 Feb 2024 04:03:15 +0800 ppwp =====			====UP=====
-
-
-
-===Sun Feb 25 04:03:15 AM WITA 2024 END ===
-
-
-[main d6d6965] Auto  Sunday, 25-02-2024 04.03.15
- 7 files changed, 59 insertions(+), 6 deletions(-)
-To github.com:ardfank/ppwp.git
-   55bcfeb..d6d6965  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-Already up to date.
-===Sun Feb 25 04:16:44 AM WITA 2024 1st ===
-
-====Sun, 25 Feb 2024 04:16:44 +0800 ACEH=====			====UP=====
-====Sun, 25 Feb 2024 04:16:44 +0800 BALI=====
-====Sun, 25 Feb 2024 04:16:45 +0800 BANTEN=====			====UP=====
-====Sun, 25 Feb 2024 04:16:45 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:16:45 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:16:46 +0800 DKI JAKARTA=====			====UP=====
-====Sun, 25 Feb 2024 04:16:46 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:16:46 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:16:47 +0800 JAWA BARAT=====			====UP=====
-====Sun, 25 Feb 2024 04:16:47 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:16:47 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:16:48 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:16:48 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:16:48 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:16:49 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:16:49 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:16:49 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:16:50 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:16:50 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:16:50 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:16:51 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:16:51 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:16:51 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:16:52 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:16:52 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:16:52 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:16:53 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:16:53 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:16:53 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:16:54 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:16:54 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:16:54 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:16:54 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:16:55 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:16:55 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:16:56 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:16:56 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:16:56 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:16:57 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:16:57 +0800 ppwp =====
-
-[main fb101a7] Auto  Sunday, 25-02-2024 04.16.57
- 5 files changed, 54 insertions(+), 4 deletions(-)
-To github.com:ardfank/ppwp.git
-   d6d6965..fb101a7  main -> main
-===Sun Feb 25 04:18:00 AM WITA 2024 2nd ===
-
-====Sun, 25 Feb 2024 04:18:00 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:18:01 +0800 BALI=====
-====Sun, 25 Feb 2024 04:18:01 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:18:01 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:18:02 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:18:02 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:18:02 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:18:03 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:18:03 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:18:03 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:18:04 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:18:04 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:18:04 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:18:05 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:18:05 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:18:05 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:18:06 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:18:06 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:18:07 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:18:07 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:18:07 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:18:08 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:18:08 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:18:08 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:18:09 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:18:09 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:18:09 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:18:10 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:18:10 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:18:11 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:18:11 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:18:11 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:18:12 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:18:12 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:18:12 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:18:13 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:18:13 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:18:13 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:18:14 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:18:14 +0800 ppwp =====
-
-
-===Sun Feb 25 04:18:14 AM WITA 2024 END ===
-
-
-[main dea85c9] Auto  Sunday, 25-02-2024 04.18.14
- 1 file changed, 51 insertions(+)
-To github.com:ardfank/ppwp.git
-   fb101a7..dea85c9  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-Already up to date.
-===Sun Feb 25 04:31:44 AM WITA 2024 1st ===
-
-====Sun, 25 Feb 2024 04:31:44 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:31:45 +0800 BALI=====
-====Sun, 25 Feb 2024 04:31:45 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:31:45 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:31:46 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:31:46 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:31:47 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:31:47 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:31:47 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:31:48 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:31:48 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:31:48 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:31:49 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:31:49 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:31:49 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:31:50 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:31:50 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:31:51 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:31:51 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:31:51 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:31:52 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:31:52 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:31:52 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:31:53 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:31:53 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:31:53 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:31:54 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:31:54 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:31:54 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:31:55 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:31:55 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:31:55 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:31:56 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:31:56 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:31:56 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:31:57 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:31:57 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:31:57 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:31:58 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:31:58 +0800 ppwp =====
-
-[main fcfca53] Auto  Sunday, 25-02-2024 04.31.58
- 1 file changed, 50 insertions(+)
-To github.com:ardfank/ppwp.git
-   dea85c9..fcfca53  main -> main
-===Sun Feb 25 04:33:02 AM WITA 2024 2nd ===
-
-====Sun, 25 Feb 2024 04:33:02 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:33:02 +0800 BALI=====
-====Sun, 25 Feb 2024 04:33:03 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:33:03 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:33:03 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:33:04 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:33:04 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:33:04 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:33:05 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:33:05 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:33:05 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:33:06 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:33:06 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:33:06 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:33:07 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:33:07 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:33:07 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:33:08 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:33:08 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:33:08 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:33:09 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:33:09 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:33:09 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:33:10 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:33:10 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:33:10 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:33:11 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:33:11 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:33:11 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:33:12 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:33:12 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:33:12 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:33:13 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:33:13 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:33:13 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:33:14 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:33:14 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:33:14 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:33:15 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:33:15 +0800 ppwp =====
-
-
-===Sun Feb 25 04:33:15 AM WITA 2024 END ===
-
-
-[main 9acedd5] Auto  Sunday, 25-02-2024 04.33.15
- 1 file changed, 51 insertions(+)
-To github.com:ardfank/ppwp.git
-   fcfca53..9acedd5  main -> main
-From github.com:ardfank/ppwp
- * branch            main       -> FETCH_HEAD
-Already up to date.
-===Sun Feb 25 04:46:45 AM WITA 2024 1st ===
-
-====Sun, 25 Feb 2024 04:46:45 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:46:45 +0800 BALI=====
-====Sun, 25 Feb 2024 04:46:45 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:46:46 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:46:46 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:46:47 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:46:47 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:46:47 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:46:48 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:46:48 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:46:48 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:46:49 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:46:49 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:46:49 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:46:50 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:46:50 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:46:50 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:46:51 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:46:51 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:46:51 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:46:52 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:46:52 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:46:52 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:46:53 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:46:53 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:46:53 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:46:54 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:46:54 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:46:54 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:46:55 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:46:55 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:46:55 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:46:56 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:46:56 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:46:56 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:46:57 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:46:57 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:46:58 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:46:58 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:46:58 +0800 ppwp =====
-
-[main d83c6a7] Auto  Sunday, 25-02-2024 04.46.59
- 1 file changed, 50 insertions(+)
-To github.com:ardfank/ppwp.git
-   9acedd5..d83c6a7  main -> main
-===Sun Feb 25 04:48:02 AM WITA 2024 2nd ===
-
-====Sun, 25 Feb 2024 04:48:02 +0800 ACEH=====
-====Sun, 25 Feb 2024 04:48:02 +0800 BALI=====
-====Sun, 25 Feb 2024 04:48:03 +0800 BANTEN=====
-====Sun, 25 Feb 2024 04:48:03 +0800 BENGKULU=====
-====Sun, 25 Feb 2024 04:48:03 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
-====Sun, 25 Feb 2024 04:48:04 +0800 DKI JAKARTA=====
-====Sun, 25 Feb 2024 04:48:04 +0800 GORONTALO=====
-====Sun, 25 Feb 2024 04:48:04 +0800 JAMBI=====
-====Sun, 25 Feb 2024 04:48:05 +0800 JAWA BARAT=====
-====Sun, 25 Feb 2024 04:48:05 +0800 JAWA TENGAH=====
-====Sun, 25 Feb 2024 04:48:06 +0800 JAWA TIMUR=====
-====Sun, 25 Feb 2024 04:48:06 +0800 KALIMANTAN BARAT=====
-====Sun, 25 Feb 2024 04:48:06 +0800 KALIMANTAN SELATAN=====
-====Sun, 25 Feb 2024 04:48:07 +0800 KALIMANTAN TENGAH=====
-====Sun, 25 Feb 2024 04:48:07 +0800 KALIMANTAN TIMUR=====
-====Sun, 25 Feb 2024 04:48:07 +0800 KALIMANTAN UTARA=====
-====Sun, 25 Feb 2024 04:48:08 +0800 KEPULAUAN BANGKA BELITUNG=====
-====Sun, 25 Feb 2024 04:48:08 +0800 KEPULAUAN RIAU=====
-====Sun, 25 Feb 2024 04:48:08 +0800 LAMPUNG=====
-====Sun, 25 Feb 2024 04:48:09 +0800 Luar Negeri=====
-====Sun, 25 Feb 2024 04:48:09 +0800 MALUKU=====
-====Sun, 25 Feb 2024 04:48:09 +0800 MALUKU UTARA=====
-====Sun, 25 Feb 2024 04:48:10 +0800 NUSA TENGGARA BARAT=====
-====Sun, 25 Feb 2024 04:48:10 +0800 NUSA TENGGARA TIMUR=====
-====Sun, 25 Feb 2024 04:48:10 +0800 P A P U A=====
-====Sun, 25 Feb 2024 04:48:11 +0800 PAPUA BARAT=====
-====Sun, 25 Feb 2024 04:48:11 +0800 PAPUA BARAT DAYA=====
-====Sun, 25 Feb 2024 04:48:11 +0800 PAPUA PEGUNUNGAN=====
-====Sun, 25 Feb 2024 04:48:12 +0800 PAPUA SELATAN=====
-====Sun, 25 Feb 2024 04:48:12 +0800 PAPUA TENGAH=====
-====Sun, 25 Feb 2024 04:48:12 +0800 RIAU=====
-====Sun, 25 Feb 2024 04:48:13 +0800 SULAWESI BARAT=====
-====Sun, 25 Feb 2024 04:48:13 +0800 SULAWESI SELATAN=====
-====Sun, 25 Feb 2024 04:48:13 +0800 SULAWESI TENGAH=====
-====Sun, 25 Feb 2024 04:48:14 +0800 SULAWESI TENGGARA=====
-====Sun, 25 Feb 2024 04:48:14 +0800 SULAWESI UTARA=====
-====Sun, 25 Feb 2024 04:48:14 +0800 SUMATERA BARAT=====
-====Sun, 25 Feb 2024 04:48:15 +0800 SUMATERA SELATAN=====
-====Sun, 25 Feb 2024 04:48:15 +0800 SUMATERA UTARA=====
-====Sun, 25 Feb 2024 04:48:16 +0800 ppwp =====
-
-
-===Sun Feb 25 04:48:16 AM WITA 2024 END ===
-
+====Sun, 25 Feb 2024 05:01:44 +0800 ACEH=====
+====Sun, 25 Feb 2024 05:01:45 +0800 BALI=====
+====Sun, 25 Feb 2024 05:01:45 +0800 BANTEN=====
+====Sun, 25 Feb 2024 05:01:46 +0800 BENGKULU=====
+====Sun, 25 Feb 2024 05:01:46 +0800 DAERAH ISTIMEWA YOGYAKARTA=====
+====Sun, 25 Feb 2024 05:01:46 +0800 DKI JAKARTA=====
+====Sun, 25 Feb 2024 05:01:47 +0800 GORONTALO=====
+====Sun, 25 Feb 2024 05:01:47 +0800 JAMBI=====
+====Sun, 25 Feb 2024 05:01:47 +0800 JAWA BARAT=====
+====Sun, 25 Feb 2024 05:01:48 +0800 JAWA TENGAH=====
+====Sun, 25 Feb 2024 05:01:48 +0800 JAWA TIMUR=====
+====Sun, 25 Feb 2024 05:01:48 +0800 KALIMANTAN BARAT=====
+====Sun, 25 Feb 2024 05:01:49 +0800 KALIMANTAN SELATAN=====
+====Sun, 25 Feb 2024 05:01:49 +0800 KALIMANTAN TENGAH=====
+====Sun, 25 Feb 2024 05:01:49 +0800 KALIMANTAN TIMUR=====
+====Sun, 25 Feb 2024 05:01:50 +0800 KALIMANTAN UTARA=====
+====Sun, 25 Feb 2024 05:01:50 +0800 KEPULAUAN BANGKA BELITUNG=====
+====Sun, 25 Feb 2024 05:01:50 +0800 KEPULAUAN RIAU=====
+====Sun, 25 Feb 2024 05:01:51 +0800 LAMPUNG=====
+====Sun, 25 Feb 2024 05:01:51 +0800 Luar Negeri=====
+====Sun, 25 Feb 2024 05:01:52 +0800 MALUKU=====
+====Sun, 25 Feb 2024 05:01:52 +0800 MALUKU UTARA=====
+====Sun, 25 Feb 2024 05:01:52 +0800 NUSA TENGGARA BARAT=====
+====Sun, 25 Feb 2024 05:01:53 +0800 NUSA TENGGARA TIMUR=====
+====Sun, 25 Feb 2024 05:01:53 +0800 P A P U A=====
+====Sun, 25 Feb 2024 05:01:53 +0800 PAPUA BARAT=====
+====Sun, 25 Feb 2024 05:01:54 +0800 PAPUA BARAT DAYA=====
+====Sun, 25 Feb 2024 05:01:54 +0800 PAPUA PEGUNUNGAN=====
+====Sun, 25 Feb 2024 05:01:54 +0800 PAPUA SELATAN=====
+====Sun, 25 Feb 2024 05:01:55 +0800 PAPUA TENGAH=====
+====Sun, 25 Feb 2024 05:01:55 +0800 RIAU=====
+====Sun, 25 Feb 2024 05:01:55 +0800 SULAWESI BARAT=====
+====Sun, 25 Feb 2024 05:01:56 +0800 SULAWESI SELATAN=====
+====Sun, 25 Feb 2024 05:01:56 +0800 SULAWESI TENGAH=====
+====Sun, 25 Feb 2024 05:01:56 +0800 SULAWESI TENGGARA=====
+====Sun, 25 Feb 2024 05:01:57 +0800 SULAWESI UTARA=====
+====Sun, 25 Feb 2024 05:01:57 +0800 SUMATERA BARAT=====
+====Sun, 25 Feb 2024 05:01:57 +0800 SUMATERA SELATAN=====
+====Sun, 25 Feb 2024 05:01:58 +0800 SUMATERA UTARA=====
+====Sun, 25 Feb 2024 05:01:58 +0800 ppwp =====
 
