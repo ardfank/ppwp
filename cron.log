@@ -42,3 +42,57 @@
 ====Sun, 25 Feb 2024 14:03:01 +0800 ACEH 
 ====Sun, 25 Feb 2024 14:03:01 +0800 ppwp ✅
 
+[main 4b6e417] Auto  Sunday, 25-02-2024 14.03.01
+ 5 files changed, 48 insertions(+), 572 deletions(-)
+ rewrite cron.log (99%)
+To github.com:ardfank/ppwp.git
+   c382b9f..4b6e417  main -> main
+===Sun Feb 25 02:03:58 PM WITA 2024 2nd ===
+
+====Sun, 25 Feb 2024 14:03:58 +0800 SUMATERA UTARA 
+====Sun, 25 Feb 2024 14:04:07 +0800 SUMATERA SELATAN ✅
+====Sun, 25 Feb 2024 14:04:08 +0800 SUMATERA BARAT ✅
+====Sun, 25 Feb 2024 14:04:30 +0800 SULAWESI UTARA 
+====Sun, 25 Feb 2024 14:04:38 +0800 SULAWESI TENGGARA ✅
+====Sun, 25 Feb 2024 14:04:38 +0800 SULAWESI TENGAH ✅
+====Sun, 25 Feb 2024 14:04:38 +0800 SULAWESI SELATAN ✅
+====Sun, 25 Feb 2024 14:04:39 +0800 SULAWESI BARAT 
+====Sun, 25 Feb 2024 14:04:39 +0800 RIAU ✅
+====Sun, 25 Feb 2024 14:04:40 +0800 PAPUA TENGAH ✅
+====Sun, 25 Feb 2024 14:04:40 +0800 PAPUA SELATAN ✅
+====Sun, 25 Feb 2024 14:04:41 +0800 PAPUA PEGUNUNGAN 
+====Sun, 25 Feb 2024 14:04:41 +0800 PAPUA BARAT DAYA ✅
+====Sun, 25 Feb 2024 14:04:41 +0800 PAPUA BARAT ✅
+====Sun, 25 Feb 2024 14:04:48 +0800 P A P U A ✅
+====Sun, 25 Feb 2024 14:04:52 +0800 NUSA TENGGARA TIMUR ✅
+====Sun, 25 Feb 2024 14:05:04 +0800 NUSA TENGGARA BARAT ✅
+====Sun, 25 Feb 2024 14:05:06 +0800 MALUKU UTARA ✅
+====Sun, 25 Feb 2024 14:05:18 +0800 MALUKU ✅
+====Sun, 25 Feb 2024 14:05:18 +0800 Luar Negeri PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/99.json): Failed to open stream: HTTP request failed! in /mnt/log/game/ppwp/json/prov.php on line 10
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 13
+
+====Sun, 25 Feb 2024 14:06:27 +0800 LAMPUNG ✅
+====Sun, 25 Feb 2024 14:06:27 +0800 KEPULAUAN RIAU ✅
+====Sun, 25 Feb 2024 14:06:28 +0800 KEPULAUAN BANGKA BELITUNG ✅
+====Sun, 25 Feb 2024 14:06:28 +0800 KALIMANTAN UTARA ✅
+====Sun, 25 Feb 2024 14:06:29 +0800 KALIMANTAN TIMUR ✅
+====Sun, 25 Feb 2024 14:06:29 +0800 KALIMANTAN TENGAH ✅
+====Sun, 25 Feb 2024 14:06:30 +0800 KALIMANTAN SELATAN ✅
+====Sun, 25 Feb 2024 14:06:30 +0800 KALIMANTAN BARAT ✅
+====Sun, 25 Feb 2024 14:06:31 +0800 JAWA TIMUR ✅
+====Sun, 25 Feb 2024 14:06:31 +0800 JAWA TENGAH ✅
+====Sun, 25 Feb 2024 14:06:31 +0800 JAWA BARAT ✅
+====Sun, 25 Feb 2024 14:06:32 +0800 JAMBI ✅
+====Sun, 25 Feb 2024 14:06:32 +0800 GORONTALO ✅
+====Sun, 25 Feb 2024 14:06:33 +0800 DKI JAKARTA ✅
+====Sun, 25 Feb 2024 14:06:33 +0800 DAERAH ISTIMEWA YOGYAKARTA ✅
+====Sun, 25 Feb 2024 14:06:34 +0800 BENGKULU ✅
+====Sun, 25 Feb 2024 14:06:34 +0800 BANTEN ✅
+====Sun, 25 Feb 2024 14:06:35 +0800 BALI ✅
+====Sun, 25 Feb 2024 14:06:35 +0800 ACEH ✅
+====Sun, 25 Feb 2024 14:06:36 +0800 ppwp 
+
+
+===Sun Feb 25 02:06:36 PM WITA 2024 END ===
+
+
