@@ -18,7 +18,7 @@ for($i=0;$i<3;$i++){
         $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
         $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
         if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
-            echo "\t=UP=";
+            echo "\t✅";
             $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
             foreach($pp['table'] as $a => $b){
                     $ppwp[$tm][$pro[$a]]=array((isset($b[100025]))?$b[100025]:0,(isset($b[100026]))?$b[100026]:0,(isset($b[100027]))?$b[100027]:0,$b['persen']);
@@ -37,7 +37,7 @@ for($i=0;$i<3;$i++){
 	$tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
 	$tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
 	if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
-        echo "\t=UP=\n";
+        echo "\t✅\n";
         $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
         foreach($pp['table'] as $a => $b){
                 $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027],$b['persen']);
