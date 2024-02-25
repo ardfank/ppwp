@@ -42,3 +42,73 @@
 ====Sun, 25 Feb 2024 12:02:10 +0800 SUMATERA UTARA=====
 ====Sun, 25 Feb 2024 12:02:10 +0800 ppwp =====
 
+[main 1dc2a8d] Auto  Sunday, 25-02-2024 12.02.10
+ 1 file changed, 44 insertions(+), 403 deletions(-)
+ rewrite cron.log (99%)
+To github.com:ardfank/ppwp.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:ardfank/ppwp.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+===Sun Feb 25 12:03:13 PM WITA 2024 2nd ===
+
+====Sun, 25 Feb 2024 12:03:14 +0800 ACEH=====
+====Sun, 25 Feb 2024 12:03:14 +0800 BALI=====			====UP=====
+====Sun, 25 Feb 2024 12:03:14 +0800 BANTEN=====			====UP=====
+====Sun, 25 Feb 2024 12:03:15 +0800 BENGKULU=====			====UP=====
+====Sun, 25 Feb 2024 12:03:15 +0800 DAERAH ISTIMEWA YOGYAKARTA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:16 +0800 DKI JAKARTA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:16 +0800 GORONTALO=====			====UP=====
+====Sun, 25 Feb 2024 12:03:16 +0800 JAMBI=====			====UP=====
+====Sun, 25 Feb 2024 12:03:17 +0800 JAWA BARAT=====			====UP=====
+====Sun, 25 Feb 2024 12:03:17 +0800 JAWA TENGAH=====			====UP=====
+====Sun, 25 Feb 2024 12:03:18 +0800 JAWA TIMUR=====			====UP=====
+====Sun, 25 Feb 2024 12:03:18 +0800 KALIMANTAN BARAT=====
+====Sun, 25 Feb 2024 12:03:18 +0800 KALIMANTAN SELATAN=====			====UP=====
+====Sun, 25 Feb 2024 12:03:19 +0800 KALIMANTAN TENGAH=====			====UP=====
+====Sun, 25 Feb 2024 12:03:19 +0800 KALIMANTAN TIMUR=====
+====Sun, 25 Feb 2024 12:03:20 +0800 KALIMANTAN UTARA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:20 +0800 KEPULAUAN BANGKA BELITUNG=====			====UP=====
+====Sun, 25 Feb 2024 12:03:21 +0800 KEPULAUAN RIAU=====			====UP=====
+====Sun, 25 Feb 2024 12:03:21 +0800 LAMPUNG=====			====UP=====
+====Sun, 25 Feb 2024 12:03:22 +0800 Luar Negeri=====
+====Sun, 25 Feb 2024 12:03:22 +0800 MALUKU=====			====UP=====
+====Sun, 25 Feb 2024 12:03:22 +0800 MALUKU UTARA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:23 +0800 NUSA TENGGARA BARAT=====			====UP=====
+====Sun, 25 Feb 2024 12:03:23 +0800 NUSA TENGGARA TIMUR=====			====UP=====
+====Sun, 25 Feb 2024 12:03:24 +0800 P A P U A=====			====UP=====PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 24
+
+====Sun, 25 Feb 2024 12:03:24 +0800 PAPUA BARAT=====			====UP=====
+====Sun, 25 Feb 2024 12:03:25 +0800 PAPUA BARAT DAYA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:25 +0800 PAPUA PEGUNUNGAN=====
+====Sun, 25 Feb 2024 12:03:25 +0800 PAPUA SELATAN=====			====UP=====
+====Sun, 25 Feb 2024 12:03:26 +0800 PAPUA TENGAH=====			====UP=====PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100025 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100026 in /mnt/log/game/ppwp/json/prov.php on line 24
+PHP Warning:  Undefined array key 100027 in /mnt/log/game/ppwp/json/prov.php on line 24
+
+====Sun, 25 Feb 2024 12:03:26 +0800 RIAU=====			====UP=====
+====Sun, 25 Feb 2024 12:03:27 +0800 SULAWESI BARAT=====			====UP=====
+====Sun, 25 Feb 2024 12:03:27 +0800 SULAWESI SELATAN=====			====UP=====
+====Sun, 25 Feb 2024 12:03:28 +0800 SULAWESI TENGAH=====			====UP=====
+====Sun, 25 Feb 2024 12:03:28 +0800 SULAWESI TENGGARA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:28 +0800 SULAWESI UTARA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:29 +0800 SUMATERA BARAT=====			====UP=====
+====Sun, 25 Feb 2024 12:03:29 +0800 SUMATERA SELATAN=====			====UP=====
+====Sun, 25 Feb 2024 12:03:30 +0800 SUMATERA UTARA=====			====UP=====
+====Sun, 25 Feb 2024 12:03:30 +0800 ppwp =====			====UP=====
+
+
+
+===Sun Feb 25 12:03:30 PM WITA 2024 END ===
+
+
