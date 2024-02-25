@@ -218,3 +218,77 @@ To github.com:ardfank/ppwp.git
 ===Sun Feb 25 08:14:39 PM WITA 2024 END ===
 
 
+[main b1fe2c8] Auto  Sunday, 25-02-2024 20.14.39
+ 1 file changed, 51 insertions(+)
+To github.com:ardfank/ppwp.git
+   e450003..b1fe2c8  main -> main
+From github.com:ardfank/ppwp
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+===Sun Feb 25 08:27:49 PM WITA 2024 1st ===
+
+====Sun, 25 Feb 2024 20:27:49 +0800 ppwp 
+====Sun, 25 Feb 2024 20:27:52 +0800 ACEH PHP Warning:  file_get_contents(): SSL: Handshake timed out in /mnt/log/game/ppwp/json/prov.php on line 33
+PHP Warning:  file_get_contents(): Failed to enable crypto in /mnt/log/game/ppwp/json/prov.php on line 33
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/11.json): Failed to open stream: operation failed in /mnt/log/game/ppwp/json/prov.php on line 33
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 36
+
+====Sun, 25 Feb 2024 20:28:52 +0800 BALI 
+====Sun, 25 Feb 2024 20:28:53 +0800 BANTEN PHP Warning:  file_get_contents(): SSL: Handshake timed out in /mnt/log/game/ppwp/json/prov.php on line 32
+PHP Warning:  file_get_contents(): Failed to enable crypto in /mnt/log/game/ppwp/json/prov.php on line 32
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/36.json): Failed to open stream: operation failed in /mnt/log/game/ppwp/json/prov.php on line 32
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 41
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 45
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 46
+
+====Sun, 25 Feb 2024 20:29:53 +0800 ppwp 
+====Sun, 25 Feb 2024 20:29:58 +0800 BENGKULU 
+====Sun, 25 Feb 2024 20:29:59 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Sun, 25 Feb 2024 20:30:03 +0800 DKI JAKARTA 
+====Sun, 25 Feb 2024 20:30:06 +0800 GORONTALO 
+====Sun, 25 Feb 2024 20:30:07 +0800 JAMBI 
+====Sun, 25 Feb 2024 20:30:08 +0800 JAWA BARAT 
+====Sun, 25 Feb 2024 20:30:10 +0800 JAWA TENGAH 
+====Sun, 25 Feb 2024 20:30:12 +0800 JAWA TIMUR 
+====Sun, 25 Feb 2024 20:30:22 +0800 KALIMANTAN BARAT 
+====Sun, 25 Feb 2024 20:30:22 +0800 KALIMANTAN SELATAN 
+====Sun, 25 Feb 2024 20:30:26 +0800 KALIMANTAN TENGAH 
+====Sun, 25 Feb 2024 20:30:32 +0800 KALIMANTAN TIMUR 
+====Sun, 25 Feb 2024 20:30:50 +0800 KALIMANTAN UTARA 
+====Sun, 25 Feb 2024 20:30:51 +0800 KEPULAUAN BANGKA BELITUNG 
+====Sun, 25 Feb 2024 20:30:51 +0800 KEPULAUAN RIAU 
+====Sun, 25 Feb 2024 20:30:51 +0800 LAMPUNG 
+====Sun, 25 Feb 2024 20:30:52 +0800 Luar Negeri 
+====Sun, 25 Feb 2024 20:30:52 +0800 MALUKU 
+====Sun, 25 Feb 2024 20:30:53 +0800 MALUKU UTARA 
+====Sun, 25 Feb 2024 20:30:53 +0800 NUSA TENGGARA BARAT 
+====Sun, 25 Feb 2024 20:30:54 +0800 NUSA TENGGARA TIMUR 
+====Sun, 25 Feb 2024 20:30:54 +0800 P A P U A 
+====Sun, 25 Feb 2024 20:30:54 +0800 PAPUA BARAT 
+====Sun, 25 Feb 2024 20:30:55 +0800 PAPUA BARAT DAYA 
+====Sun, 25 Feb 2024 20:30:55 +0800 PAPUA PEGUNUNGAN 
+====Sun, 25 Feb 2024 20:30:56 +0800 PAPUA SELATAN 
+====Sun, 25 Feb 2024 20:30:56 +0800 PAPUA TENGAH 
+====Sun, 25 Feb 2024 20:30:57 +0800 RIAU 
+====Sun, 25 Feb 2024 20:30:57 +0800 SULAWESI BARAT 
+====Sun, 25 Feb 2024 20:30:58 +0800 SULAWESI SELATAN 
+====Sun, 25 Feb 2024 20:30:58 +0800 SULAWESI TENGAH 
+====Sun, 25 Feb 2024 20:30:59 +0800 SULAWESI TENGGARA 
+====Sun, 25 Feb 2024 20:30:59 +0800 SULAWESI UTARA 
+====Sun, 25 Feb 2024 20:30:59 +0800 SUMATERA BARAT 
+====Sun, 25 Feb 2024 20:31:00 +0800 SUMATERA SELATAN 
+====Sun, 25 Feb 2024 20:31:00 +0800 SUMATERA UTARA 
+
