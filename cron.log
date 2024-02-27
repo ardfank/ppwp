@@ -299,3 +299,181 @@ To github.com:ardfank/ppwp.git
 ===Wed Feb 28 03:27:59 AM WITA 2024 END ===
 
 
+[main 833f0d3] Auto  Wednesday, 28-02-2024 03.27.59
+ 1 file changed, 51 insertions(+)
+To github.com:ardfank/ppwp.git
+   27d9dd4..833f0d3  main -> main
+From github.com:ardfank/ppwp
+ * branch            main       -> FETCH_HEAD
+   833f0d3..e1b9859  main       -> origin/main
+Updating 833f0d3..e1b9859
+Fast-forward
+ json/kp/ACEH.json                       |  1 +
+ json/kp/BALI.json                       |  1 +
+ json/kp/BANTEN.json                     |  1 +
+ json/kp/BENGKULU.json                   |  1 +
+ json/kp/DAERAH ISTIMEWA YOGYAKARTA.json |  1 +
+ json/kp/DKI JAKARTA.json                |  1 +
+ json/kp/GORONTALO.json                  |  1 +
+ json/kp/JAMBI.json                      |  1 +
+ json/kp/JAWA BARAT.json                 |  1 +
+ json/kp/JAWA TENGAH.json                |  1 +
+ json/kp/JAWA TIMUR.json                 |  1 +
+ json/kp/KALIMANTAN BARAT.json           |  1 +
+ json/kp/KALIMANTAN SELATAN.json         |  1 +
+ json/kp/KALIMANTAN TENGAH.json          |  1 +
+ json/kp/KALIMANTAN TIMUR.json           |  1 +
+ json/kp/KALIMANTAN UTARA.json           |  1 +
+ json/kp/KEPULAUAN BANGKA BELITUNG.json  |  1 +
+ json/kp/KEPULAUAN RIAU.json             |  1 +
+ json/kp/LAMPUNG.json                    |  1 +
+ json/kp/Luar Negeri.json                |  1 +
+ json/kp/MALUKU UTARA.json               |  1 +
+ json/kp/MALUKU.json                     |  1 +
+ json/kp/NUSA TENGGARA BARAT.json        |  1 +
+ json/kp/NUSA TENGGARA TIMUR.json        |  1 +
+ json/kp/P A P U A.json                  |  1 +
+ json/kp/PAPUA BARAT DAYA.json           |  1 +
+ json/kp/PAPUA BARAT.json                |  1 +
+ json/kp/PAPUA PEGUNUNGAN.json           |  1 +
+ json/kp/PAPUA SELATAN.json              |  1 +
+ json/kp/PAPUA TENGAH.json               |  1 +
+ json/kp/RIAU.json                       |  1 +
+ json/kp/SULAWESI BARAT.json             |  1 +
+ json/kp/SULAWESI SELATAN.json           |  1 +
+ json/kp/SULAWESI TENGAH.json            |  1 +
+ json/kp/SULAWESI TENGGARA.json          |  1 +
+ json/kp/SULAWESI UTARA.json             |  1 +
+ json/kp/SUMATERA BARAT.json             |  1 +
+ json/kp/SUMATERA SELATAN.json           |  1 +
+ json/kp/SUMATERA UTARA.json             |  1 +
+ json/kp/ppwp.json                       |  2 +-
+ json/prov.php                           | 53 +++++++++++++++++++++++++++++++++
+ 41 files changed, 93 insertions(+), 1 deletion(-)
+ create mode 100644 json/kp/ACEH.json
+ create mode 100644 json/kp/BALI.json
+ create mode 100644 json/kp/BANTEN.json
+ create mode 100644 json/kp/BENGKULU.json
+ create mode 100644 json/kp/DAERAH ISTIMEWA YOGYAKARTA.json
+ create mode 100644 json/kp/DKI JAKARTA.json
+ create mode 100644 json/kp/GORONTALO.json
+ create mode 100644 json/kp/JAMBI.json
+ create mode 100644 json/kp/JAWA BARAT.json
+ create mode 100644 json/kp/JAWA TENGAH.json
+ create mode 100644 json/kp/JAWA TIMUR.json
+ create mode 100644 json/kp/KALIMANTAN BARAT.json
+ create mode 100644 json/kp/KALIMANTAN SELATAN.json
+ create mode 100644 json/kp/KALIMANTAN TENGAH.json
+ create mode 100644 json/kp/KALIMANTAN TIMUR.json
+ create mode 100644 json/kp/KALIMANTAN UTARA.json
+ create mode 100644 json/kp/KEPULAUAN BANGKA BELITUNG.json
+ create mode 100644 json/kp/KEPULAUAN RIAU.json
+ create mode 100644 json/kp/LAMPUNG.json
+ create mode 100644 json/kp/Luar Negeri.json
+ create mode 100644 json/kp/MALUKU UTARA.json
+ create mode 100644 json/kp/MALUKU.json
+ create mode 100644 json/kp/NUSA TENGGARA BARAT.json
+ create mode 100644 json/kp/NUSA TENGGARA TIMUR.json
+ create mode 100644 json/kp/P A P U A.json
+ create mode 100644 json/kp/PAPUA BARAT DAYA.json
+ create mode 100644 json/kp/PAPUA BARAT.json
+ create mode 100644 json/kp/PAPUA PEGUNUNGAN.json
+ create mode 100644 json/kp/PAPUA SELATAN.json
+ create mode 100644 json/kp/PAPUA TENGAH.json
+ create mode 100644 json/kp/RIAU.json
+ create mode 100644 json/kp/SULAWESI BARAT.json
+ create mode 100644 json/kp/SULAWESI SELATAN.json
+ create mode 100644 json/kp/SULAWESI TENGAH.json
+ create mode 100644 json/kp/SULAWESI TENGGARA.json
+ create mode 100644 json/kp/SULAWESI UTARA.json
+ create mode 100644 json/kp/SUMATERA BARAT.json
+ create mode 100644 json/kp/SUMATERA SELATAN.json
+ create mode 100644 json/kp/SUMATERA UTARA.json
+===Wed Feb 28 03:43:10 AM WITA 2024 1st ===
+== Kawal Pemilu START ==
+
+====Wed, 28 Feb 2024 03:43:10 +0800 KP ppwp ✅
+====Wed, 28 Feb 2024 03:43:11 +0800 ACEH 
+====Wed, 28 Feb 2024 03:43:11 +0800 BALI 
+====Wed, 28 Feb 2024 03:43:11 +0800 BANTEN 
+====Wed, 28 Feb 2024 03:43:12 +0800 BENGKULU 
+====Wed, 28 Feb 2024 03:43:12 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Wed, 28 Feb 2024 03:43:12 +0800 DKI JAKARTA 
+====Wed, 28 Feb 2024 03:43:12 +0800 GORONTALO 
+====Wed, 28 Feb 2024 03:43:12 +0800 JAMBI 
+====Wed, 28 Feb 2024 03:43:13 +0800 JAWA BARAT 
+====Wed, 28 Feb 2024 03:43:13 +0800 JAWA TENGAH 
+====Wed, 28 Feb 2024 03:43:13 +0800 JAWA TIMUR 
+====Wed, 28 Feb 2024 03:43:13 +0800 KALIMANTAN BARAT 
+====Wed, 28 Feb 2024 03:43:14 +0800 KALIMANTAN SELATAN 
+====Wed, 28 Feb 2024 03:43:14 +0800 KALIMANTAN TENGAH 
+====Wed, 28 Feb 2024 03:43:14 +0800 KALIMANTAN TIMUR 
+====Wed, 28 Feb 2024 03:43:14 +0800 KALIMANTAN UTARA 
+====Wed, 28 Feb 2024 03:43:15 +0800 KEPULAUAN BANGKA BELITUNG 
+====Wed, 28 Feb 2024 03:43:15 +0800 KEPULAUAN RIAU 
+====Wed, 28 Feb 2024 03:43:15 +0800 LAMPUNG 
+====Wed, 28 Feb 2024 03:43:15 +0800 Luar Negeri 
+====Wed, 28 Feb 2024 03:43:16 +0800 MALUKU 
+====Wed, 28 Feb 2024 03:43:16 +0800 MALUKU UTARA 
+====Wed, 28 Feb 2024 03:43:16 +0800 NUSA TENGGARA BARAT 
+====Wed, 28 Feb 2024 03:43:16 +0800 NUSA TENGGARA TIMUR 
+====Wed, 28 Feb 2024 03:43:17 +0800 P A P U A 
+====Wed, 28 Feb 2024 03:43:17 +0800 PAPUA BARAT 
+====Wed, 28 Feb 2024 03:43:17 +0800 PAPUA BARAT DAYA 
+====Wed, 28 Feb 2024 03:43:17 +0800 PAPUA PEGUNUNGAN 
+====Wed, 28 Feb 2024 03:43:18 +0800 PAPUA SELATAN 
+====Wed, 28 Feb 2024 03:43:18 +0800 PAPUA TENGAH 
+====Wed, 28 Feb 2024 03:43:18 +0800 RIAU 
+====Wed, 28 Feb 2024 03:43:18 +0800 SULAWESI BARAT 
+====Wed, 28 Feb 2024 03:43:19 +0800 SULAWESI SELATAN 
+====Wed, 28 Feb 2024 03:43:19 +0800 SULAWESI TENGAH 
+====Wed, 28 Feb 2024 03:43:19 +0800 SULAWESI TENGGARA 
+====Wed, 28 Feb 2024 03:43:19 +0800 SULAWESI UTARA 
+====Wed, 28 Feb 2024 03:43:20 +0800 SUMATERA BARAT 
+====Wed, 28 Feb 2024 03:43:20 +0800 SUMATERA SELATAN 
+====Wed, 28 Feb 2024 03:43:20 +0800 SUMATERA UTARA 
+
+== Kawal Pemilu END ==
+
+
+====Wed, 28 Feb 2024 03:43:20 +0800 ppwp 
+====Wed, 28 Feb 2024 03:43:21 +0800 ACEH 
+====Wed, 28 Feb 2024 03:43:21 +0800 BALI 
+====Wed, 28 Feb 2024 03:43:21 +0800 BANTEN 
+====Wed, 28 Feb 2024 03:43:22 +0800 BENGKULU 
+====Wed, 28 Feb 2024 03:43:22 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Wed, 28 Feb 2024 03:43:22 +0800 DKI JAKARTA 
+====Wed, 28 Feb 2024 03:43:23 +0800 GORONTALO 
+====Wed, 28 Feb 2024 03:43:23 +0800 JAMBI 
+====Wed, 28 Feb 2024 03:43:23 +0800 JAWA BARAT 
+====Wed, 28 Feb 2024 03:43:24 +0800 JAWA TENGAH 
+====Wed, 28 Feb 2024 03:43:24 +0800 JAWA TIMUR 
+====Wed, 28 Feb 2024 03:43:24 +0800 KALIMANTAN BARAT 
+====Wed, 28 Feb 2024 03:43:25 +0800 KALIMANTAN SELATAN 
+====Wed, 28 Feb 2024 03:43:25 +0800 KALIMANTAN TENGAH 
+====Wed, 28 Feb 2024 03:43:25 +0800 KALIMANTAN TIMUR 
+====Wed, 28 Feb 2024 03:43:25 +0800 KALIMANTAN UTARA 
+====Wed, 28 Feb 2024 03:43:26 +0800 KEPULAUAN BANGKA BELITUNG 
+====Wed, 28 Feb 2024 03:43:26 +0800 KEPULAUAN RIAU 
+====Wed, 28 Feb 2024 03:43:26 +0800 LAMPUNG 
+====Wed, 28 Feb 2024 03:43:27 +0800 Luar Negeri 
+====Wed, 28 Feb 2024 03:43:27 +0800 MALUKU 
+====Wed, 28 Feb 2024 03:43:27 +0800 MALUKU UTARA 
+====Wed, 28 Feb 2024 03:43:28 +0800 NUSA TENGGARA BARAT 
+====Wed, 28 Feb 2024 03:43:28 +0800 NUSA TENGGARA TIMUR 
+====Wed, 28 Feb 2024 03:43:28 +0800 P A P U A 
+====Wed, 28 Feb 2024 03:43:29 +0800 PAPUA BARAT 
+====Wed, 28 Feb 2024 03:43:29 +0800 PAPUA BARAT DAYA 
+====Wed, 28 Feb 2024 03:43:29 +0800 PAPUA PEGUNUNGAN 
+====Wed, 28 Feb 2024 03:43:30 +0800 PAPUA SELATAN 
+====Wed, 28 Feb 2024 03:43:30 +0800 PAPUA TENGAH 
+====Wed, 28 Feb 2024 03:43:30 +0800 RIAU 
+====Wed, 28 Feb 2024 03:43:30 +0800 SULAWESI BARAT 
+====Wed, 28 Feb 2024 03:43:31 +0800 SULAWESI SELATAN 
+====Wed, 28 Feb 2024 03:43:31 +0800 SULAWESI TENGAH 
+====Wed, 28 Feb 2024 03:43:31 +0800 SULAWESI TENGGARA 
+====Wed, 28 Feb 2024 03:43:32 +0800 SULAWESI UTARA 
+====Wed, 28 Feb 2024 03:43:32 +0800 SUMATERA BARAT 
+====Wed, 28 Feb 2024 03:43:32 +0800 SUMATERA SELATAN 
+====Wed, 28 Feb 2024 03:43:33 +0800 SUMATERA UTARA 
+
