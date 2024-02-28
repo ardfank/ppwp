@@ -219,3 +219,6 @@ function ff(ab){
 		psk(ab);
 	}
 }
+function kp(a){
+	window.location.href="?p="+a+"&q="+cq;
+}
