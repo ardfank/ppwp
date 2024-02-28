@@ -25,7 +25,7 @@ function ppwp(){
 	}
 }
 for($i=0;$i<1;$i++){
-    echo "== Kawal Pemilu START ==\n";
+    echo "\n== Kawal Pemilu START ==\n";
     $tm = time()*1000;
     echo "\n====".date('r')." KP ppwp ";
     $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=");
@@ -105,6 +105,6 @@ for($i=0;$i<1;$i++){
             if($cpp==0){ppwp();}
         }
     }
-	echo "\n== KPU END ==\n\n";
+	echo "\n\n== KPU END ==\n\n";
 }
 ?>
