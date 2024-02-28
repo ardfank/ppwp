@@ -37,7 +37,7 @@ for($i=0;$i<1;$i++){
     $pp1=0;$pp2=0;$pp3=0;$ppt=0;$ppt=0;$ppc=0;
     foreach($pp['result']['aggregated'] as $a => $b){
         $per=number_format((float)($b[0]['totalCompletedTps']/$b[0]['totalTps']*100),2,'.','');
-        $ppwp[$tm][$prov[$a]]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas1'],$per);
+        $ppwp[$tm][$prov[$a]]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
         $pp1+=$b[0]['pas1'];$pp2+=$b[0]['pas2'];$pp3+=$b[0]['pas3'];
         $ppt+=$b[0]['totalTps'];$ppc+=$b[0]['totalCompletedTps'];
     }
@@ -63,7 +63,7 @@ for($i=0;$i<1;$i++){
         $pp1=0;$pp2=0;$pp3=0;$ppt=0;$ppt=0;$ppc=0;
         foreach($pp['result']['aggregated'] as $a => $b){
             $per=number_format((float)($b[0]['totalCompletedTps']/$b[0]['totalTps']*100),2,'.','');
-            $ppwp[$tm][$b[0]['name']]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas1'],$per);
+            $ppwp[$tm][$b[0]['name']]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
             $pp1+=$b[0]['pas1'];$pp2+=$b[0]['pas2'];$pp3+=$b[0]['pas3'];
             $ppt+=$b[0]['totalTps'];$ppc+=$b[0]['totalCompletedTps'];
         }
