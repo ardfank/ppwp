@@ -80,6 +80,7 @@ for($i=0;$i<1;$i++){
     echo "\n\n== Kawal Pemilu END ==\n\n== KPU START ==\n";
     ppwp();
     foreach($prov as $c => $d){
+        sleep(1);
         echo "\n====".date('r')." $d ";
         $tm = time()*1000;
         $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
