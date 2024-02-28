@@ -2,7 +2,7 @@ prov=JSON.parse('{"1":"total","11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKU
 var q=new URLSearchParams(window.location.search).get("q");
 var p=new URLSearchParams(window.location.search).get("p");
 var cq=(q!=null && q!=undefined && q!="")?q:'ppwp';
-var cp=(p!=null && p!=undefined && p!="")?"kp/"+cq:cq;
+var cp=(p!=null && p!=undefined && p!="" && p!=0)?"kp/"+cq:cq;
 function toggleDataSeries(e) {
 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
 		e.dataSeries.visible = false;
@@ -38,7 +38,8 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 	$("#kab").change(function(){
 		var ab = $(this).val();
 		ab=(ab==="total")?"#":ab;
-		window.location.href="?q="+ab;
+		p=(p!=null && p!=undefined && p!="" && p!=0)?"?p=1":"?p=0";
+		window.location.href=p+"&q="+ab;
 	});
 	$("#kabss").change(function(){
 		var ab = $(this).val();
