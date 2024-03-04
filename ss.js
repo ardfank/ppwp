@@ -56,7 +56,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		ckp(avc);
-		var setr=setInterval(function () { ckp(avc) }, 12000);
+		var setr=setInterval(function () { ckp(avc) }, 120000);
 	}
 });
 // CANVAS JS START
