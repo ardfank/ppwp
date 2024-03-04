@@ -130,6 +130,7 @@ function tt(k){
 	var ls = Object.keys(k).pop();
 	var ab = $('#kabss').val();
 	var ba = (cq=='ppwp')?'':$('#kab').val();
+	// console.log(ls);
 	$.each(k[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
@@ -148,6 +149,9 @@ function tt(k){
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
 	ab=(ab==="total")?"":ab;
 	$("#pos table").dataTable().fnFilter(ab);
+}
+function gok(obj, value) {
+  return Object.keys(obj).find(key => obj[key] === value);
 }
 function rr(){
 	var ab = $('#kabss').val();
@@ -173,7 +177,15 @@ function rr(){
 		}
 	});
 }
-setInterval(function () { rr() }, 120000);
+if(p==0){
+	clearInterval(setr);
+	var setr=setInterval(function () { rr() }, 600000);
+}else{
+	var avc=gok(prov,cq);
+	clearInterval(setr);
+	console.log(avc);
+	var setr=setInterval(function () { ckp(avc) }, 120000);
+}
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
@@ -221,4 +233,41 @@ function ff(ab){
 }
 function kp(a){
 	window.location.href="?p="+a+"&q="+cq;
+}
+function gbv(value) {
+  return Object.keys(prov).find(key => prov[key] === value);
+}
+function ckp(ab){
+	ab=(ab==undefined)?"":ab;
+	var tn = Date.now();
+	var kj={};
+	pp1=0;pp3=0;pp2=0;pc=0;pt=0;
+	$.ajax({url:"https://kp24-fd486.et.r.appspot.com/h?id="+ab+"&time="+tn,dataType:"json",success:function(res){
+		$.each(res.result.aggregated,function(a,b){
+			var kg=b[0].name;var p1=b[0].pas1;var p2=b[0].pas2;var p3=b[0].pas3;
+			per=(b[0].totalCompletedTps/b[0].totalTps)*100;
+			kj[kg]=[p1,p2,p3,per.toFixed(2)];
+			pp1+=p1;pp3+=p3;pp2+=p2;pc+=b[0].totalCompletedTps;pt+=b[0].totalTps;
+		})
+		per=(pc/pt)*100;
+		kj.total=[pp1,pp2,pp3,per.toFixed(2)];
+	kabl[tn]=kj;
+	tt(kabl);
+	////////
+	var abc = $('#kabss').val();
+	var ls = Object.keys(kabl).pop();
+	// console.log(kabl[ls]);
+	var amin=parseInt(kabl[ls][abc][0]);
+	var pg=parseInt(kabl[ls][abc][1]);
+	var gm=parseInt(kabl[ls][abc][2]);
+	var pr=kabl[ls][abc][3];
+	dps.push({x: tn,y: amin,label1: pr});
+	dpm.push({x: tn,y: pg,label1: pr});
+	dpp.push({x: tn,y: gm,label1: pr});
+	opt.data[0].dataPoints = dps;
+	opt.data[1].dataPoints = dpm;
+	opt.data[2].dataPoints = dpp;
+	(new CanvasJS.Chart("chart", opt)).render();
+	//////
+	}});
 }
