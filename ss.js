@@ -49,7 +49,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		tt(kabl);
 	});
 	tt(kabl);
-	if(p==0){
+	if(p!=1){
 		clearInterval(setr);
 		var setr=setInterval(function () { rr() }, 600000);
 	}else{
