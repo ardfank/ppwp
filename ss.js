@@ -53,12 +53,12 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		cpk(avc);
-		var setr=setInterval(function () { cpk(avc) }, 150000);
+		var setr=setInterval(function () { cpk(avc) }, 75000);
 	}else{
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		ckp(avc);
-		var setr=setInterval(function () { ckp(avc) }, 150000);
+		var setr=setInterval(function () { ckp(avc) }, 75000);
 	}
 });
 // CANVAS JS START
@@ -250,7 +250,6 @@ function cpk(ac){
 			$.each(res.table,function(a,b){
 				var kg=wj[a];var p1=b[100025];var p2=b[100026];var p3=b[100027];var per=b['persen'];
 				kj[kg]=[p1,p2,p3,per];
-				// pp1+=p1;pp3+=p3;pp2+=p2;pc+=b[0].totalCompletedTps;pt+=b[0].totalTps;
 			})
 			kj.total=[res.chart[100025],res.chart[100026],res.chart[100027],res.chart['persen']];
 			var ls = Object.keys(kabl).pop();
@@ -258,7 +257,6 @@ function cpk(ac){
 				kabl[tn]=kj;
 				cap(kabl);tt(kabl);
 			}
-			// console.log(kj);
 		}});
 	});
 }
@@ -276,4 +274,13 @@ function cap(kabl){
 	opt.data[1].dataPoints = dpm;
 	opt.data[2].dataPoints = dpp;
 	(new CanvasJS.Chart("chart", opt)).render();
+}
+function rr(){
+	if(p!=1){
+		var avc=gok(prov,cq);
+		cpk(avc);
+	}else{
+		var avc=gok(prov,cq);
+		ckp(avc);
+	}
 }
