@@ -56,7 +56,7 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		ckp(avc);
-		var setr=setInterval(function () { ckp(avc) }, 120000);
+		var setr=setInterval(function () { ckp(avc) }, 12000);
 	}
 });
 // CANVAS JS START
@@ -250,8 +250,12 @@ function ckp(ab){
 		})
 		per=(pc/pt)*100;
 		kj.total=[pp1,pp2,pp3,per.toFixed(2)];
-		kabl[tn]=kj;
-	}}).done(function(){cap(kabl);tt(kabl);});
+		var ls = Object.keys(kabl).pop();
+		if(JSON.stringify(kj.total)!==JSON.stringify(kabl[ls].total)){
+			kabl[tn]=kj;
+			cap(kabl);tt(kabl);
+		}
+	}});
 }
 function cap(kabl){
 	var abc = $('#kabss').val();
