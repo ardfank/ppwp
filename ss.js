@@ -50,13 +50,15 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 	});
 	tt(kabl);
 	if(p!=1){
+		var avc=gok(prov,cq);
 		clearInterval(setr);
-		var setr=setInterval(function () { rr() }, 600000);
+		cpk(avc);
+		var setr=setInterval(function () { cpk(avc) }, 60000);
 	}else{
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		ckp(avc);
-		var setr=setInterval(function () { ckp(avc) }, 120000);
+		var setr=setInterval(function () { ckp(avc) }, 60000);
 	}
 });
 // CANVAS JS START
@@ -161,30 +163,6 @@ function tt(k){
 function gok(obj, value) {
   return Object.keys(obj).find(key => obj[key] === value);
 }
-function rr(){
-	var ab = $('#kabss').val();
-	var tn = Date.now();
-	$.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"json",success:function(res){
-			var ls = Object.keys(res).pop();
-			var kls = Object.keys(kabl).pop();
-			var amin=parseInt(res[ls][ab][0]);
-			var pg=parseInt(res[ls][ab][1]);
-			var gm=parseInt(res[ls][ab][2]);
-			var pr=res[ls][ab][3];
-			if(ls!==kls){
-				kabl=res;
-				dps.push({x: tn,y: amin,label1: pr});
-				dpm.push({x: tn,y: pg,label1: pr});
-				dpp.push({x: tn,y: gm,label1: pr});
-				opt.data[0].dataPoints = dps;
-				opt.data[1].dataPoints = dpm;
-				opt.data[2].dataPoints = dpp;
-				(new CanvasJS.Chart("chart", opt)).render();
-				tt(res);
-			}
-		}
-	});
-}
 function cc(l){
 	opt.data[0].type = l;
 	opt.data[1].type = l;
@@ -256,6 +234,33 @@ function ckp(ab){
 			cap(kabl);tt(kabl);
 		}
 	}});
+}
+function cpk(ac){
+	ab=(ac==undefined)?"ppwp":"ppwp/"+ac;
+	ad=(ab=="ppwp")?0:ac;
+	var tn = Date.now();
+	var kj={};var wj={};
+	$.ajax({url:"https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/"+ad+".json?time="+tn,dataType:"json",success:function(res){
+		$.each(res,function(a,b){
+			wj[b.kode]=b.nama;
+		});
+	}}).done(function(){
+		pp1=0;pp3=0;pp2=0;pc=0;pt=0;
+		$.ajax({url:"https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/"+ab+".json?time="+tn,dataType:"json",success:function(res){
+			$.each(res.table,function(a,b){
+				var kg=wj[a];var p1=b[100025];var p2=b[100026];var p3=b[100027];var per=b['persen'];
+				kj[kg]=[p1,p2,p3,per];
+				// pp1+=p1;pp3+=p3;pp2+=p2;pc+=b[0].totalCompletedTps;pt+=b[0].totalTps;
+			})
+			kj.total=[res.chart[100025],res.chart[100026],res.chart[100027],res.chart['persen']];
+			var ls = Object.keys(kabl).pop();
+			if(JSON.stringify(kj.total)!==JSON.stringify(kabl[ls].total)){
+				kabl[tn]=kj;
+				cap(kabl);tt(kabl);
+			}
+			// console.log(kj);
+		}});
+	});
 }
 function cap(kabl){
 	var abc = $('#kabss').val();
