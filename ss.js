@@ -49,6 +49,15 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		tt(kabl);
 	});
 	tt(kabl);
+	if(p==0){
+		clearInterval(setr);
+		var setr=setInterval(function () { rr() }, 600000);
+	}else{
+		var avc=gok(prov,cq);
+		clearInterval(setr);
+		ckp(avc);
+		var setr=setInterval(function () { ckp(avc) }, 120000);
+	}
 });
 // CANVAS JS START
 var dps=[];var dpm=[];var dpp=[];
@@ -130,7 +139,6 @@ function tt(k){
 	var ls = Object.keys(k).pop();
 	var ab = $('#kabss').val();
 	var ba = (cq=='ppwp')?'':$('#kab').val();
-	// console.log(ls);
 	$.each(k[ls],function(a,b){
 		b0=b[0]??0;b1=b[1]??0;b2=b[2]??0;b3=b[3]??0;
 		var pa=(b0!=0)?((b0/(b0+b1+b2))*100).toFixed(2):0;
@@ -176,15 +184,6 @@ function rr(){
 			}
 		}
 	});
-}
-if(p==0){
-	clearInterval(setr);
-	var setr=setInterval(function () { rr() }, 600000);
-}else{
-	var avc=gok(prov,cq);
-	clearInterval(setr);
-	console.log(avc);
-	var setr=setInterval(function () { ckp(avc) }, 120000);
 }
 function cc(l){
 	opt.data[0].type = l;
@@ -251,12 +250,12 @@ function ckp(ab){
 		})
 		per=(pc/pt)*100;
 		kj.total=[pp1,pp2,pp3,per.toFixed(2)];
-	kabl[tn]=kj;
-	tt(kabl);
-	////////
+		kabl[tn]=kj;
+	}}).done(function(){cap(kabl);tt(kabl);});
+}
+function cap(kabl){
 	var abc = $('#kabss').val();
 	var ls = Object.keys(kabl).pop();
-	// console.log(kabl[ls]);
 	var amin=parseInt(kabl[ls][abc][0]);
 	var pg=parseInt(kabl[ls][abc][1]);
 	var gm=parseInt(kabl[ls][abc][2]);
@@ -268,6 +267,4 @@ function ckp(ab){
 	opt.data[1].dataPoints = dpm;
 	opt.data[2].dataPoints = dpp;
 	(new CanvasJS.Chart("chart", opt)).render();
-	//////
-	}});
 }
