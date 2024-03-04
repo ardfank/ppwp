@@ -53,12 +53,12 @@ $.ajax({url:"https://ppwp.networkreverse.com/json/"+cp+".json?"+tn,dataType:"jso
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		cpk(avc);
-		var setr=setInterval(function () { cpk(avc) }, 60000);
+		var setr=setInterval(function () { cpk(avc) }, 150000);
 	}else{
 		var avc=gok(prov,cq);
 		clearInterval(setr);
 		ckp(avc);
-		var setr=setInterval(function () { ckp(avc) }, 60000);
+		var setr=setInterval(function () { ckp(avc) }, 150000);
 	}
 });
 // CANVAS JS START
