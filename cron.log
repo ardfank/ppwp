@@ -653,3 +653,57 @@ Stack trace:
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
 Already up to date.
+[main 9cb24731] Auto  Tuesday, 05-03-2024 12.43.13
+ 7 files changed, 56 insertions(+), 6 deletions(-)
+To github.com:ardfank/ppwp.git
+   096692ac..9cb24731  main -> main
+===Tue Mar  5 12:43:36 PM WITA 2024 2nd ===
+
+== Kawal Pemilu START ==
+
+====Tue, 05 Mar 2024 12:43:37 +0800 KP ppwp 
+====Tue, 05 Mar 2024 12:43:37 +0800 ACEH 
+====Tue, 05 Mar 2024 12:43:37 +0800 BALI 
+====Tue, 05 Mar 2024 12:43:37 +0800 BANTEN 
+====Tue, 05 Mar 2024 12:43:37 +0800 BENGKULU 
+====Tue, 05 Mar 2024 12:43:38 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Tue, 05 Mar 2024 12:43:38 +0800 DKI JAKARTA 
+====Tue, 05 Mar 2024 12:43:38 +0800 GORONTALO 
+====Tue, 05 Mar 2024 12:43:38 +0800 JAMBI 
+====Tue, 05 Mar 2024 12:43:39 +0800 JAWA BARAT 
+====Tue, 05 Mar 2024 12:43:39 +0800 JAWA TENGAH 
+====Tue, 05 Mar 2024 12:43:39 +0800 JAWA TIMUR 
+====Tue, 05 Mar 2024 12:43:40 +0800 KALIMANTAN BARAT 
+====Tue, 05 Mar 2024 12:43:40 +0800 KALIMANTAN SELATAN 
+====Tue, 05 Mar 2024 12:43:40 +0800 KALIMANTAN TENGAH 
+====Tue, 05 Mar 2024 12:43:40 +0800 KALIMANTAN TIMUR 
+====Tue, 05 Mar 2024 12:43:41 +0800 KALIMANTAN UTARA 
+====Tue, 05 Mar 2024 12:43:41 +0800 KEPULAUAN BANGKA BELITUNG 
+====Tue, 05 Mar 2024 12:43:41 +0800 KEPULAUAN RIAU 
+====Tue, 05 Mar 2024 12:43:41 +0800 LAMPUNG 
+====Tue, 05 Mar 2024 12:43:41 +0800 Luar Negeri 
+====Tue, 05 Mar 2024 12:43:42 +0800 MALUKU 
+====Tue, 05 Mar 2024 12:43:42 +0800 MALUKU UTARA 
+====Tue, 05 Mar 2024 12:43:42 +0800 NUSA TENGGARA BARAT 
+====Tue, 05 Mar 2024 12:43:42 +0800 NUSA TENGGARA TIMUR 
+====Tue, 05 Mar 2024 12:43:43 +0800 P A P U A 
+====Tue, 05 Mar 2024 12:43:43 +0800 PAPUA BARAT 
+====Tue, 05 Mar 2024 12:43:43 +0800 PAPUA BARAT DAYA 
+====Tue, 05 Mar 2024 12:43:43 +0800 PAPUA PEGUNUNGAN 
+====Tue, 05 Mar 2024 12:43:44 +0800 PAPUA SELATAN 
+====Tue, 05 Mar 2024 12:43:44 +0800 PAPUA TENGAH 
+====Tue, 05 Mar 2024 12:43:44 +0800 RIAU 
+====Tue, 05 Mar 2024 12:43:44 +0800 SULAWESI BARAT PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 64
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 64
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 64
+PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /mnt/log/game/ppwp/json/prov.php:70
+Stack trace:
+#0 {main}
+  thrown in /mnt/log/game/ppwp/json/prov.php on line 70
+
+===Tue Mar  5 12:43:44 PM WITA 2024 END ===
+
+
+From github.com:ardfank/ppwp
+ * branch              main       -> FETCH_HEAD
+Already up to date.
