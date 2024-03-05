@@ -109,7 +109,7 @@ for($i=0;$i<1;$i++){
 	echo "\n\n== KPU END ==\n\n";
     sleep(1);
 	echo "\n\n== Partai START ==\n\n";
-    echo "\n====".date('r')." Partai";
+    echo "\n====".date('r')." Partai ";
     $tm = time()*1000;
     $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
     $dpl=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
@@ -128,6 +128,7 @@ for($i=0;$i<1;$i++){
     $ppwp=json_decode($file,true);
     $tol=array_sum($pp['chart']);
     if(array_sum(end($ppwp)['total'])-end($ppwp)['total']['persen']!=$tol){
+        echo "✅";
         foreach($pll as $il){
             if($il=="persen"){
                 $ppwp[$tm]['total'][$il]=round(($pp['progres']['progres']/$pp['progres']['total'])*100,2);
