@@ -107,5 +107,42 @@ for($i=0;$i<1;$i++){
         }
     }
 	echo "\n\n== KPU END ==\n\n";
+    sleep(1);
+	echo "\n\n== Partai START ==\n\n";
+    echo "\n====".date('r')." Partai";
+    $tm = time()*1000;
+    $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
+    $dpl=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
+    $prt=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/partai.json");
+    $pp=json_decode($pp,TRUE);
+    $dpl=json_decode($dpl,TRUE);
+    $prt=json_decode($prt,TRUE);
+    $pll=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,24,"persen");
+    foreach($dpl as $e){
+        $pdp[$e['kode']]=$e['nama'];
+    }
+    foreach($prt as $e){
+        $ppr[$e['id_pilihan']]=$e['nama'];
+    }
+    $file=file_get_contents("$path/partai.json");
+    $ppwp=json_decode($file,true);
+    $tol=array_sum($pp['chart']);
+    if(array_sum(end($ppwp)['total'])-end($ppwp)['total']['persen']!=$tol){
+        foreach($pll as $il){
+            if($il=="persen"){
+                $ppwp[$tm]['total'][$il]=round(($pp['progres']['progres']/$pp['progres']['total'])*100,2);
+            }else{
+                $ppwp[$tm]['total'][$il]=$pp['chart'][$il];
+            }
+        }
+        foreach($pp['table'] as $a => $b){
+            $pro=$pdp[$a];
+            foreach($pll as $il){
+                $ppwp[$tm][$pro][$il]=$pp['table'][$a][$il];
+            }
+        }
+        file_put_contents("$path/partai.json", json_encode($ppwp,TRUE));
+    }
+    echo "\n\n== Partai END ==\n\n";
 }
 ?>
