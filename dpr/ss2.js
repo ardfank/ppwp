@@ -145,9 +145,9 @@ function gok(obj, value) {
   return Object.keys(obj).find(key => obj[key] === value);
 }
 function cc(l){
-	opt.data[0].type = l;
-	opt.data[1].type = l;
-	opt.data[2].type = l;
+	for(var i=0;i < opt.data.length;i++){
+		opt.data[i].type = l;
+	}
 	(new CanvasJS.Chart("chart", opt)).render();
 }
 function oo(e){
