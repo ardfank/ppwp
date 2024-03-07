@@ -3557,3 +3557,889 @@ Stack trace:
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
 Already up to date.
+[main 0c5062b7] Auto  Thursday, 07-03-2024 10.15.49
+ 4 files changed, 893 insertions(+), 3 deletions(-)
+To github.com:ardfank/ppwp.git
+   cd47ce42..0c5062b7  main -> main
+===Thu Mar  7 10:31:01 AM WITA 2024 1st ===
+
+== Kawal Pemilu START ==
+
+====Thu, 07 Mar 2024 10:31:01 +0800 KP ppwp ✅
+====Thu, 07 Mar 2024 10:31:02 +0800 ACEH 
+====Thu, 07 Mar 2024 10:31:02 +0800 BALI 
+====Thu, 07 Mar 2024 10:31:03 +0800 BANTEN 
+====Thu, 07 Mar 2024 10:31:03 +0800 BENGKULU 
+====Thu, 07 Mar 2024 10:31:03 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Thu, 07 Mar 2024 10:31:03 +0800 DKI JAKARTA 
+====Thu, 07 Mar 2024 10:31:03 +0800 GORONTALO 
+====Thu, 07 Mar 2024 10:31:04 +0800 JAMBI 
+====Thu, 07 Mar 2024 10:31:04 +0800 JAWA BARAT ✅
+====Thu, 07 Mar 2024 10:31:04 +0800 JAWA TENGAH 
+====Thu, 07 Mar 2024 10:31:04 +0800 JAWA TIMUR 
+====Thu, 07 Mar 2024 10:31:05 +0800 KALIMANTAN BARAT 
+====Thu, 07 Mar 2024 10:31:05 +0800 KALIMANTAN SELATAN ✅
+====Thu, 07 Mar 2024 10:31:05 +0800 KALIMANTAN TENGAH 
+====Thu, 07 Mar 2024 10:31:05 +0800 KALIMANTAN TIMUR 
+====Thu, 07 Mar 2024 10:31:06 +0800 KALIMANTAN UTARA 
+====Thu, 07 Mar 2024 10:31:06 +0800 KEPULAUAN BANGKA BELITUNG 
+====Thu, 07 Mar 2024 10:31:06 +0800 KEPULAUAN RIAU 
+====Thu, 07 Mar 2024 10:31:06 +0800 LAMPUNG ✅
+====Thu, 07 Mar 2024 10:31:07 +0800 Luar Negeri 
+====Thu, 07 Mar 2024 10:31:07 +0800 MALUKU 
+====Thu, 07 Mar 2024 10:31:07 +0800 MALUKU UTARA 
+====Thu, 07 Mar 2024 10:31:07 +0800 NUSA TENGGARA BARAT 
+====Thu, 07 Mar 2024 10:31:07 +0800 NUSA TENGGARA TIMUR 
+====Thu, 07 Mar 2024 10:31:08 +0800 P A P U A 
+====Thu, 07 Mar 2024 10:31:08 +0800 PAPUA BARAT 
+====Thu, 07 Mar 2024 10:31:08 +0800 PAPUA BARAT DAYA 
+====Thu, 07 Mar 2024 10:31:08 +0800 PAPUA PEGUNUNGAN 
+====Thu, 07 Mar 2024 10:31:09 +0800 PAPUA SELATAN 
+====Thu, 07 Mar 2024 10:31:09 +0800 PAPUA TENGAH 
+====Thu, 07 Mar 2024 10:31:09 +0800 RIAU ✅
+====Thu, 07 Mar 2024 10:31:09 +0800 SULAWESI BARAT 
+====Thu, 07 Mar 2024 10:31:09 +0800 SULAWESI SELATAN 
+====Thu, 07 Mar 2024 10:31:10 +0800 SULAWESI TENGAH 
+====Thu, 07 Mar 2024 10:31:10 +0800 SULAWESI TENGGARA 
+====Thu, 07 Mar 2024 10:31:10 +0800 SULAWESI UTARA 
+====Thu, 07 Mar 2024 10:31:10 +0800 SUMATERA BARAT ✅
+====Thu, 07 Mar 2024 10:31:11 +0800 SUMATERA SELATAN 
+====Thu, 07 Mar 2024 10:31:11 +0800 SUMATERA UTARA 
+
+== Kawal Pemilu END ==
+
+== KPU START ==
+
+====Thu, 07 Mar 2024 10:31:11 +0800 ppwp PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 10
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 14
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 18
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 19
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 19
+
+====Thu, 07 Mar 2024 10:31:12 +0800 ACEH PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/11.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/11.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:14 +0800 BALI PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/51.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:15 +0800 BANTEN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/36.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:16 +0800 BENGKULU PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/17.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:18 +0800 DAERAH ISTIMEWA YOGYAKARTA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/34.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:19 +0800 DKI JAKARTA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/31.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:21 +0800 GORONTALO PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/75.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/75.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:22 +0800 JAMBI PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/15.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/15.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:24 +0800 JAWA BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/32.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/32.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:25 +0800 JAWA TENGAH PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/33.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/33.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:27 +0800 JAWA TIMUR PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/35.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/35.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:28 +0800 KALIMANTAN BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/61.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:29 +0800 KALIMANTAN SELATAN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/63.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:31 +0800 KALIMANTAN TENGAH PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/62.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:32 +0800 KALIMANTAN TIMUR PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/64.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/64.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:33 +0800 KALIMANTAN UTARA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/65.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:35 +0800 KEPULAUAN BANGKA BELITUNG PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/19.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:36 +0800 KEPULAUAN RIAU PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/21.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/21.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:38 +0800 LAMPUNG PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/18.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:40 +0800 Luar Negeri PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/99.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/99.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:41 +0800 MALUKU PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/81.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:43 +0800 MALUKU UTARA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/82.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:44 +0800 NUSA TENGGARA BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/52.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:46 +0800 NUSA TENGGARA TIMUR PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/53.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/53.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:47 +0800 P A P U A PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/91.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:49 +0800 PAPUA BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/92.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:50 +0800 PAPUA BARAT DAYA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/96.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/96.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:51 +0800 PAPUA PEGUNUNGAN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/95.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:53 +0800 PAPUA SELATAN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/93.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:54 +0800 PAPUA TENGAH PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/94.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/94.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:55 +0800 RIAU PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/14.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:57 +0800 SULAWESI BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/76.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:58 +0800 SULAWESI SELATAN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/73.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/73.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:31:59 +0800 SULAWESI TENGAH PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/72.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:32:01 +0800 SULAWESI TENGGARA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/74.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:32:02 +0800 SULAWESI UTARA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/71.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:32:04 +0800 SUMATERA BARAT PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/13.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/13.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:32:05 +0800 SUMATERA SELATAN PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/16.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/16.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+====Thu, 07 Mar 2024 10:32:06 +0800 SUMATERA UTARA PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/12.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 86
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/12.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 87
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 90
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 95
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 99
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 100
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 100
+
+
+== KPU END ==
+
+
+
+== Partai START ==
+
+
+====Thu, 07 Mar 2024 10:32:08 +0800 Partai PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 114
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 115
+PHP Warning:  file_get_contents(https://sirekap-obj-data.kpu.go.id/pemilu/partai.json): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /mnt/log/game/ppwp/json/prov.php on line 116
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 121
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 124
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 129
+PHP Fatal error:  Uncaught TypeError: array_sum(): Argument #1 ($array) must be of type array, null given in /mnt/log/game/ppwp/json/prov.php:129
+Stack trace:
+#0 /mnt/log/game/ppwp/json/prov.php(129): array_sum()
+#1 {main}
+  thrown in /mnt/log/game/ppwp/json/prov.php on line 129
+From github.com:ardfank/ppwp
+ * branch              main       -> FETCH_HEAD
+Already up to date.
