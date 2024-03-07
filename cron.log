@@ -1105,3 +1105,131 @@ Stack trace:
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
 Already up to date.
+[main 186e65a7] Auto  Thursday, 07-03-2024 11.14.20
+ 7 files changed, 116 insertions(+), 6 deletions(-)
+To github.com:ardfank/ppwp.git
+   ecf40f3f..186e65a7  main -> main
+===Thu Mar  7 11:14:44 AM WITA 2024 2nd ===
+
+== Kawal Pemilu START ==
+
+====Thu, 07 Mar 2024 11:14:44 +0800 KP ppwp ✅
+====Thu, 07 Mar 2024 11:14:44 +0800 ACEH 
+====Thu, 07 Mar 2024 11:14:45 +0800 BALI 
+====Thu, 07 Mar 2024 11:14:45 +0800 BANTEN 
+====Thu, 07 Mar 2024 11:14:45 +0800 BENGKULU 
+====Thu, 07 Mar 2024 11:14:45 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Thu, 07 Mar 2024 11:14:46 +0800 DKI JAKARTA 
+====Thu, 07 Mar 2024 11:14:46 +0800 GORONTALO 
+====Thu, 07 Mar 2024 11:14:46 +0800 JAMBI 
+====Thu, 07 Mar 2024 11:14:47 +0800 JAWA BARAT ✅
+====Thu, 07 Mar 2024 11:14:47 +0800 JAWA TENGAH 
+====Thu, 07 Mar 2024 11:14:48 +0800 JAWA TIMUR 
+====Thu, 07 Mar 2024 11:14:48 +0800 KALIMANTAN BARAT 
+====Thu, 07 Mar 2024 11:14:48 +0800 KALIMANTAN SELATAN 
+====Thu, 07 Mar 2024 11:14:48 +0800 KALIMANTAN TENGAH 
+====Thu, 07 Mar 2024 11:14:48 +0800 KALIMANTAN TIMUR 
+====Thu, 07 Mar 2024 11:14:49 +0800 KALIMANTAN UTARA 
+====Thu, 07 Mar 2024 11:14:49 +0800 KEPULAUAN BANGKA BELITUNG 
+====Thu, 07 Mar 2024 11:14:49 +0800 KEPULAUAN RIAU 
+====Thu, 07 Mar 2024 11:14:49 +0800 LAMPUNG 
+====Thu, 07 Mar 2024 11:14:50 +0800 Luar Negeri 
+====Thu, 07 Mar 2024 11:14:50 +0800 MALUKU 
+====Thu, 07 Mar 2024 11:14:50 +0800 MALUKU UTARA 
+====Thu, 07 Mar 2024 11:14:50 +0800 NUSA TENGGARA BARAT 
+====Thu, 07 Mar 2024 11:14:51 +0800 NUSA TENGGARA TIMUR 
+====Thu, 07 Mar 2024 11:14:51 +0800 P A P U A 
+====Thu, 07 Mar 2024 11:14:51 +0800 PAPUA BARAT 
+====Thu, 07 Mar 2024 11:14:51 +0800 PAPUA BARAT DAYA 
+====Thu, 07 Mar 2024 11:14:51 +0800 PAPUA PEGUNUNGAN 
+====Thu, 07 Mar 2024 11:14:52 +0800 PAPUA SELATAN 
+====Thu, 07 Mar 2024 11:14:52 +0800 PAPUA TENGAH 
+====Thu, 07 Mar 2024 11:14:52 +0800 RIAU 
+====Thu, 07 Mar 2024 11:14:52 +0800 SULAWESI BARAT 
+====Thu, 07 Mar 2024 11:14:52 +0800 SULAWESI SELATAN 
+====Thu, 07 Mar 2024 11:14:53 +0800 SULAWESI TENGAH 
+====Thu, 07 Mar 2024 11:14:53 +0800 SULAWESI TENGGARA 
+====Thu, 07 Mar 2024 11:14:53 +0800 SULAWESI UTARA 
+====Thu, 07 Mar 2024 11:14:53 +0800 SUMATERA BARAT 
+====Thu, 07 Mar 2024 11:14:54 +0800 SUMATERA SELATAN 
+====Thu, 07 Mar 2024 11:14:54 +0800 SUMATERA UTARA 
+
+== Kawal Pemilu END ==
+
+== KPU START ==
+
+====Thu, 07 Mar 2024 11:14:54 +0800 ppwp PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 46
+✅PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 50
+PHP Warning:  Trying to access array offset on value of type null in /mnt/log/game/ppwp/json/prov.php on line 51
+PHP Warning:  foreach() argument must be of type array|object, null given in /mnt/log/game/ppwp/json/prov.php on line 51
+
+====Thu, 07 Mar 2024 11:14:55 +0800 ACEH 
+====Thu, 07 Mar 2024 11:14:57 +0800 BALI 
+====Thu, 07 Mar 2024 11:14:58 +0800 BANTEN 
+====Thu, 07 Mar 2024 11:15:00 +0800 BENGKULU 
+====Thu, 07 Mar 2024 11:15:01 +0800 DAERAH ISTIMEWA YOGYAKARTA 
+====Thu, 07 Mar 2024 11:15:03 +0800 DKI JAKARTA 
+====Thu, 07 Mar 2024 11:15:04 +0800 GORONTALO 
+====Thu, 07 Mar 2024 11:15:06 +0800 JAMBI 
+====Thu, 07 Mar 2024 11:15:07 +0800 JAWA BARAT 
+====Thu, 07 Mar 2024 11:15:09 +0800 JAWA TENGAH 
+====Thu, 07 Mar 2024 11:15:10 +0800 JAWA TIMUR 
+====Thu, 07 Mar 2024 11:15:12 +0800 KALIMANTAN BARAT 
+====Thu, 07 Mar 2024 11:15:13 +0800 KALIMANTAN SELATAN 
+====Thu, 07 Mar 2024 11:15:15 +0800 KALIMANTAN TENGAH 
+====Thu, 07 Mar 2024 11:15:16 +0800 KALIMANTAN TIMUR 
+====Thu, 07 Mar 2024 11:15:18 +0800 KALIMANTAN UTARA 
+====Thu, 07 Mar 2024 11:15:19 +0800 KEPULAUAN BANGKA BELITUNG 
+====Thu, 07 Mar 2024 11:15:20 +0800 KEPULAUAN RIAU 
+====Thu, 07 Mar 2024 11:15:22 +0800 LAMPUNG 
+====Thu, 07 Mar 2024 11:15:24 +0800 Luar Negeri 
+====Thu, 07 Mar 2024 11:15:25 +0800 MALUKU 
+====Thu, 07 Mar 2024 11:15:27 +0800 MALUKU UTARA 
+====Thu, 07 Mar 2024 11:15:28 +0800 NUSA TENGGARA BARAT 
+====Thu, 07 Mar 2024 11:15:30 +0800 NUSA TENGGARA TIMUR 
+====Thu, 07 Mar 2024 11:15:31 +0800 P A P U A 
+====Thu, 07 Mar 2024 11:15:33 +0800 PAPUA BARAT 
+====Thu, 07 Mar 2024 11:15:34 +0800 PAPUA BARAT DAYA 
+====Thu, 07 Mar 2024 11:15:36 +0800 PAPUA PEGUNUNGAN 
+====Thu, 07 Mar 2024 11:15:37 +0800 PAPUA SELATAN 
+====Thu, 07 Mar 2024 11:15:39 +0800 PAPUA TENGAH 
+====Thu, 07 Mar 2024 11:15:40 +0800 RIAU 
+====Thu, 07 Mar 2024 11:15:42 +0800 SULAWESI BARAT 
+====Thu, 07 Mar 2024 11:15:43 +0800 SULAWESI SELATAN 
+====Thu, 07 Mar 2024 11:15:45 +0800 SULAWESI TENGAH 
+====Thu, 07 Mar 2024 11:15:46 +0800 SULAWESI TENGGARA 
+====Thu, 07 Mar 2024 11:15:48 +0800 SULAWESI UTARA 
+====Thu, 07 Mar 2024 11:15:49 +0800 SUMATERA BARAT 
+====Thu, 07 Mar 2024 11:15:50 +0800 SUMATERA SELATAN 
+====Thu, 07 Mar 2024 11:15:52 +0800 SUMATERA UTARA 
+
+== KPU END ==
+
+
+
+== Partai START ==
+
+
+====Thu, 07 Mar 2024 11:15:53 +0800 Partai 
+
+== Partai END ==
+
+
+===Thu Mar  7 11:15:54 AM WITA 2024 END ===
+
+
+From github.com:ardfank/ppwp
+ * branch              main       -> FETCH_HEAD
+Already up to date.
