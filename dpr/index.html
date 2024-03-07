@@ -32,6 +32,11 @@ a{color:#fda;text-decoration: none;}span:hover{transform: scale(1.5);}
 .clear{clear:both}.isin tr.odd{background-color:rgba(255,240,220,.8)}.isin tr.even{background-color:rgba(255,222,180,.8)}span.pq{color:#f00;-webkit-text-stroke:.5px #000;}
 table{border-collapse:collapse;}.tsd,#kabss,#kab{background:rgba(255,240,220,.8)}#kabs,h2{background: rgba(255,240,220,.8);margin: 10px;padding: 10px;border-radius: 20px;text-align:center}#kabss,#kab{border-radius: 20px;text-align:center}#kabs span{float:inline-end;cursor:pointer;margin:auto 2px}
 td{text-align:center;margin:5px;white-space:nowrap;padding:2px 5px;}.ds {font-size: large;color: #933;}#anu{z-index:999;background: #000 url("https://ppwp.networkreverse.com/loading2.gif") no-repeat fixed center;width:100%;height:100%;position:absolute;top:0;left:0;margin:0 auto}
+.tsd{    overflow-x: scroll;
+    max-width: 100%;transform: rotateX(180deg);
+  overflow-x: auto;
+    display: block;
+    white-space: nowrap;}
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -39,8 +44,8 @@ td{text-align:center;margin:5px;white-space:nowrap;padding:2px 5px;}.ds {font-si
 <div id="kabs" style="width: 98%;margin:0 auto;text-align:center"><span style='padding: 2px 15px;border-radius: 10px;background-color:#f00;float:left'><a href='/'>PILPRES</a></span><select id="kabss" name="kabss"></select><span onclick="cc('stackedArea100')">📊</span><span onclick="cc('spline')">📈</span></div>
 <div id="chart" style="height: 500px; width: 98%;margin:5px auto;"></div>
 <div class="clear"></div>
-<div id="pos" style="position:absolute;min-width:99%;opacity:0.8;">
-	<div class="tsd"><table><thead><tr><th>Provinsi</th><th>AMIN</th><th>PRAGIB</th><th>GAMA</th><th>Total</th></tr></thead>
+<div id="pos" style="position:absolute;max-width:99%;opacity:0.8;">
+	<div class="tsd"><table style='transform: rotateX(180deg);'><thead><tr><th>Provinsi</th><th>AMIN</th><th>PRAGIB</th><th>GAMA</th><th>Total</th></tr></thead>
 	<tbody class="isin"></tbody>
 	</table></div>
 <div id="anu"></div>

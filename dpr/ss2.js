@@ -126,6 +126,7 @@ function tt(k){
 				var qa=(b[c]==pm)?" pq":"";
 				th+="<th>"+d+"<br/><span class='p"+qa+"'>"+pa+"%</span><br/>"+b[c].toLocaleString('id')+"</th>";
 			});
+			th+="<th>PROGRESS<br/><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</th>";
 			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th>"+th+"</tr>");
 		}else{
 			var td;
@@ -134,6 +135,7 @@ function tt(k){
 				var qa=(b[c]==pm)?" pq":"";
 				td+="<td data-sort='"+pa+"'><span class='p"+qa+"'>"+pa+"%</span><br/>"+b[c].toLocaleString('id')+"</td>";
 			});
+			td+="<td data-sort='"+b.persen+"'><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</td>";
 			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td>"+td+"</tr>");
 		}
 	});
