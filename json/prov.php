@@ -121,7 +121,7 @@ for($i=0;$i<1;$i++){
         $pp1=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
         $pp=json_decode($pp,TRUE);
         $pp1=json_decode($pp1,TRUE);
-        if(isset($pp['table']) && isset($pp['chart'])){
+        if(isset($pp['table']) && isset($pp['chart'])&& isset($pp1[0])){
             foreach($pp1 as $e){
                 $pro[$e['kode']]=$e['nama'];
             }
