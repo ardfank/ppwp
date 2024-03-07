@@ -3,11 +3,43 @@ $path=realpath(__DIR__);
 $prov='{"11":"ACEH","51":"BALI","36":"BANTEN","17":"BENGKULU","34":"DAERAH ISTIMEWA YOGYAKARTA","31":"DKI JAKARTA","75":"GORONTALO","15":"JAMBI","32":"JAWA BARAT","33":"JAWA TENGAH","35":"JAWA TIMUR","61":"KALIMANTAN BARAT","63":"KALIMANTAN SELATAN","62":"KALIMANTAN TENGAH","64":"KALIMANTAN TIMUR","65":"KALIMANTAN UTARA","19":"KEPULAUAN BANGKA BELITUNG","21":"KEPULAUAN RIAU","18":"LAMPUNG","99":"Luar Negeri","81":"MALUKU","82":"MALUKU UTARA","52":"NUSA TENGGARA BARAT","53":"NUSA TENGGARA TIMUR","91":"P A P U A","92":"PAPUA BARAT","96":"PAPUA BARAT DAYA","95":"PAPUA PEGUNUNGAN","93":"PAPUA SELATAN","94":"PAPUA TENGAH","14":"RIAU","76":"SULAWESI BARAT","73":"SULAWESI SELATAN","72":"SULAWESI TENGAH","74":"SULAWESI TENGGARA","71":"SULAWESI UTARA","13":"SUMATERA BARAT","16":"SUMATERA SELATAN","12":"SUMATERA UTARA"}';
 $prov=json_decode($prov,TRUE);
 $cpp=0;
+function asu($url){
+	$ch = curl_init();
+
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+	curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+	$headers = array();
+	$headers[] = 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0';
+	$headers[] = 'Accept: application/json, text/plain, */*';
+	$headers[] = 'Accept-Language: en-US,en;q=0.5';
+	$headers[] = 'Accept-Encoding: gzip, deflate, br';
+	$headers[] = 'Origin: https://pemilu2024.kpu.go.id';
+	$headers[] = 'Dnt: 1';
+	$headers[] = 'Connection: keep-alive';
+	$headers[] = 'Referer: https://pemilu2024.kpu.go.id/';
+	$headers[] = 'Sec-Fetch-Dest: empty';
+	$headers[] = 'Sec-Fetch-Mode: cors';
+	$headers[] = 'Sec-Fetch-Site: same-site';
+	$headers[] = 'Pragma: no-cache';
+	$headers[] = 'Cache-Control: no-cache';
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+	$result = curl_exec($ch);
+	if (curl_errno($ch)) {
+		echo 'Error:' . curl_error($ch);
+	}
+	curl_close($ch);
+	return $result;
+}
 function ppwp(){
     global $path,$prov,$cpp;
 	$tm = time()*1000;
     echo "\n====".date('r')." ppwp ";
-	$pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
+	$pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
 	$file=file_get_contents($path."/ppwp.json");
 	$ppwp=json_decode($file,true);
@@ -83,8 +115,8 @@ for($i=0;$i<1;$i++){
         sleep(1);
         echo "\n====".date('r')." $d ";
         $tm = time()*1000;
-        $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
-        $pp1=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
+        $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
+        $pp1=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
         $pp=json_decode($pp,TRUE);
         $pp1=json_decode($pp1,TRUE);
         foreach($pp1 as $e){
@@ -111,9 +143,9 @@ for($i=0;$i<1;$i++){
 	echo "\n\n== Partai START ==\n\n";
     echo "\n====".date('r')." Partai ";
     $tm = time()*1000;
-    $pp=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
-    $dpl=file_get_contents("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
-    $prt=file_get_contents("https://sirekap-obj-data.kpu.go.id/pemilu/partai.json");
+    $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
+    $dpl=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
+    $prt=asu("https://sirekap-obj-data.kpu.go.id/pemilu/partai.json");
     $pp=json_decode($pp,TRUE);
     $dpl=json_decode($dpl,TRUE);
     $prt=json_decode($prt,TRUE);
