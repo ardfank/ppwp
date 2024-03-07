@@ -30,7 +30,7 @@ function asu($url){
 
 	$result = curl_exec($ch);
 	if (curl_errno($ch)) {
-		$result.='Error:' . curl_error($ch);
+		echo 'Error Get Data Dari Kpu:' . curl_error($ch);
 	}
 	curl_close($ch);
 	return $result;
