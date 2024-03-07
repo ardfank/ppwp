@@ -30,7 +30,7 @@ function asu($url){
 
 	$result = curl_exec($ch);
 	if (curl_errno($ch)) {
-		echo 'Error:' . curl_error($ch);
+		$result.='Error:' . curl_error($ch);
 	}
 	curl_close($ch);
 	return $result;
@@ -41,20 +41,22 @@ function ppwp(){
     echo "\n====".date('r')." ppwp ";
 	$pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
-	$file=file_get_contents($path."/ppwp.json");
-	$ppwp=json_decode($file,true);
-	$tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
-	$tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
-	if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
-        echo "✅";$cpp=1;
-        $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
-        foreach($pp['table'] as $a => $b){
-                $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027],$b['persen']);
+    if(isset($pp['table']) && isset($pp['chart'])){
+        $file=file_get_contents($path."/ppwp.json");
+        $ppwp=json_decode($file,true);
+        $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
+        $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
+        if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
+            echo "✅";$cpp=1;
+            $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
+            foreach($pp['table'] as $a => $b){
+                    $ppwp[$tm][$prov[$a]]=array($b[100025],$b[100026],$b[100027],$b['persen']);
+            }
+            if(isset($pp['table']) && isset($pp['chart'])){
+                    file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
+            }
         }
-        if(isset($pp['table']) && isset($pp['chart'])){
-                file_put_contents($path."/ppwp.json", json_encode($ppwp,TRUE));
-        }
-	}
+    }
 }
 for($i=0;$i<1;$i++){
     echo "\n== Kawal Pemilu START ==\n";
@@ -119,23 +121,25 @@ for($i=0;$i<1;$i++){
         $pp1=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
         $pp=json_decode($pp,TRUE);
         $pp1=json_decode($pp1,TRUE);
-        foreach($pp1 as $e){
-            $pro[$e['kode']]=$e['nama'];
-        }
-        $file=file_get_contents("$path/$d.json");
-        $ppwp=json_decode($file,true);
-        $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
-        $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
-        if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
-            echo "✅";
-            $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
-            foreach($pp['table'] as $a => $b){
-                    $ppwp[$tm][$pro[$a]]=array((isset($b[100025]))?$b[100025]:0,(isset($b[100026]))?$b[100026]:0,(isset($b[100027]))?$b[100027]:0,$b['persen']);
+        if(isset($pp['table']) && isset($pp['chart'])){
+            foreach($pp1 as $e){
+                $pro[$e['kode']]=$e['nama'];
             }
-            if(isset($pp['table']) && isset($pp['chart'])){
-                    file_put_contents("$path/$d.json", json_encode($ppwp,TRUE));
+            $file=file_get_contents("$path/$d.json");
+            $ppwp=json_decode($file,true);
+            $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
+            $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
+            if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
+                echo "✅";
+                $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
+                foreach($pp['table'] as $a => $b){
+                        $ppwp[$tm][$pro[$a]]=array((isset($b[100025]))?$b[100025]:0,(isset($b[100026]))?$b[100026]:0,(isset($b[100027]))?$b[100027]:0,$b['persen']);
+                }
+                if(isset($pp['table']) && isset($pp['chart'])){
+                        file_put_contents("$path/$d.json", json_encode($ppwp,TRUE));
+                }
+                if($cpp==0){ppwp();}
             }
-            if($cpp==0){ppwp();}
         }
     }
 	echo "\n\n== KPU END ==\n\n";
@@ -149,32 +153,34 @@ for($i=0;$i<1;$i++){
     $pp=json_decode($pp,TRUE);
     $dpl=json_decode($dpl,TRUE);
     $prt=json_decode($prt,TRUE);
-    $pll=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,24,"persen");
-    foreach($dpl as $e){
-        $pdp[$e['kode']]=$e['nama'];
-    }
-    foreach($prt as $e){
-        $ppr[$e['id_pilihan']]=$e['nama'];
-    }
-    $file=file_get_contents("$path/partai.json");
-    $ppwp=json_decode($file,true);
-    $tol=array_sum($pp['chart']);
-    if(array_sum(end($ppwp)['total'])-end($ppwp)['total']['persen']!=$tol){
-        echo "✅";
-        foreach($pll as $il){
-            if($il=="persen"){
-                $ppwp[$tm]['total'][$il]=round(($pp['progres']['progres']/$pp['progres']['total'])*100,2);
-            }else{
-                $ppwp[$tm]['total'][$il]=$pp['chart'][$il];
-            }
+    if(isset($pp['table']) && isset($pp['chart'])){
+        $pll=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,24,"persen");
+        foreach($dpl as $e){
+            $pdp[$e['kode']]=$e['nama'];
         }
-        foreach($pp['table'] as $a => $b){
-            $pro=$pdp[$a];
+        foreach($prt as $e){
+            $ppr[$e['id_pilihan']]=$e['nama'];
+        }
+        $file=file_get_contents("$path/partai.json");
+        $ppwp=json_decode($file,true);
+        $tol=array_sum($pp['chart']);
+        if(array_sum(end($ppwp)['total'])-end($ppwp)['total']['persen']!=$tol){
+            echo "✅";
             foreach($pll as $il){
-                $ppwp[$tm][$pro][$il]=$pp['table'][$a][$il];
+                if($il=="persen"){
+                    $ppwp[$tm]['total'][$il]=round(($pp['progres']['progres']/$pp['progres']['total'])*100,2);
+                }else{
+                    $ppwp[$tm]['total'][$il]=$pp['chart'][$il];
+                }
             }
+            foreach($pp['table'] as $a => $b){
+                $pro=$pdp[$a];
+                foreach($pll as $il){
+                    $ppwp[$tm][$pro][$il]=$pp['table'][$a][$il];
+                }
+            }
+            file_put_contents("$path/partai.json", json_encode($ppwp,TRUE));
         }
-        file_put_contents("$path/partai.json", json_encode($ppwp,TRUE));
     }
     echo "\n\n== Partai END ==\n\n";
 }
