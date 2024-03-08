@@ -13,6 +13,13 @@ function toggleDataSeries(e) {
 	}
 	e.chart.render();
 }
+function ee() {
+  for(var i = 0; i < opt.data.length; i++) {
+    var vf=(opt.data[i].visible)??true;
+	opt.data[i].visible = !vf;
+	(new CanvasJS.Chart("chart", opt)).render();
+  }
+}
 var kabl;
 // $.each(prov,function(a,b){
 // 	bb=(b=='total')?'Pilih Provinsi':b;
