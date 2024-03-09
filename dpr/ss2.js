@@ -143,7 +143,7 @@ function tt(k){
 				td+="<td data-sort='"+pa+"'><span class='p"+qa+"'>"+pa+"%</span><br/>"+b[c].toLocaleString('id')+"</td>";
 			});
 			// td+="<td data-sort='"+b.persen+"'><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</td>";
-			$("#pos .isin").append("<tr><td><span class='p' style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span><br/>"+b.persen+"%("+bx.toLocaleString('id')+")</td>"+td+"</tr>");
+			$("#pos .isin").append("<tr><td><span class='p' style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span><br/>"+b.persen+"% ("+bx.toLocaleString('id')+")</td>"+td+"</tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
