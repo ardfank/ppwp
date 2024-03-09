@@ -38,7 +38,7 @@ function asu($url){
 function ppwp(){
     global $path,$prov,$cpp;
 	$tm = time()*1000;
-    echo "\n====".date('r')." ppwp ";
+    echo "\n".date('H:i:s')." ppwp ";
 	$pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
     if(isset($pp['table']) && isset($pp['chart'])){
@@ -61,7 +61,7 @@ function ppwp(){
 for($i=0;$i<1;$i++){
     echo "\n== Kawal Pemilu START ==";
     $tm = time()*1000;
-    echo "\n".date('r')." KP ppwp ";
+    echo "\n".date('H:i:s')." KP ppwp ";
     $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=");
     $pp=json_decode($pp,TRUE);
     $file=file_get_contents($path."/kp/ppwp.json");
@@ -86,7 +86,7 @@ for($i=0;$i<1;$i++){
     }
     foreach($prov as $c => $d){
         $tm = time()*1000;
-        echo "\n".date('r')." $d ";
+        echo "\n".date('H:i:s')." $d ";
         $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=$c");
         $pp=json_decode($pp,TRUE);
         $file=file_get_contents($path."/kp/$d.json");
@@ -114,7 +114,7 @@ for($i=0;$i<1;$i++){
     ppwp();
     foreach($prov as $c => $d){
         sleep(1);
-        echo "\n".date('r')." $d ";
+        echo "\n".date('H:i:s')." $d ";
         $tm = time()*1000;
         $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/$c.json");
         $pp1=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/$c.json");
@@ -142,7 +142,7 @@ for($i=0;$i<1;$i++){
         }
     }
 	echo "\n== KPU END ==\n\n== Partai START ==";
-    echo "\n".date('r')." Partai ";
+    echo "\n".date('H:i:s')." Partai ";
     $tm = time()*1000;
     $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
     $dpl=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
