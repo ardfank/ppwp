@@ -64,39 +64,15 @@ for($i=0;$i<1;$i++){
     echo "\n".date('H:i:s')." KP ppwp ";
     $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=");
     $pp=json_decode($pp,TRUE);
-    $file=file_get_contents($path."/kp/ppwp.json");
-    $ppwp=json_decode($file,true);
-    $ppwp[$tm]['total']=array(end($ppwp)['total'][0],end($ppwp)['total'][1],end($ppwp)['total'][2],end($ppwp)['total'][3]);
-    $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
-    $pp1=0;$pp2=0;$pp3=0;$ppt=0;$ppt=0;$ppc=0;
-    foreach($pp['result']['aggregated'] as $a => $b){
-        $per=number_format((float)($b[0]['totalCompletedTps']/$b[0]['totalTps']*100),2,'.','');
-        $ppwp[$tm][$prov[$a]]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
-        $pp1+=$b[0]['pas1'];$pp2+=$b[0]['pas2'];$pp3+=$b[0]['pas3'];
-        $ppt+=$b[0]['totalTps'];$ppc+=$b[0]['totalCompletedTps'];
-    }
-    $per=number_format((float)($ppc/$ppt*100),2,'.','');
-    $tol=$pp1+$pp2+$pp3;
-    if($tol!==$tlo || $pp1!==end($ppwp)['total'][0] || $pp2 !== end($ppwp)['total'][1] || $pp3 !== end($ppwp)['total'][2]){
-        echo "✅";
-        $ppwp[$tm]['total']=array($pp1,$pp2,$pp3,$per);
-        if(isset($pp['result']['aggregated'])){
-                file_put_contents($path."/kp/ppwp.json", json_encode($ppwp,TRUE));
-        }
-    }
-    foreach($prov as $c => $d){
-        $tm = time()*1000;
-        echo "\n".date('H:i:s')." $d ";
-        $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=$c");
-        $pp=json_decode($pp,TRUE);
-        $file=file_get_contents($path."/kp/$d.json");
+    if(isset($pp['result'])){
+        $file=file_get_contents($path."/kp/ppwp.json");
         $ppwp=json_decode($file,true);
         $ppwp[$tm]['total']=array(end($ppwp)['total'][0],end($ppwp)['total'][1],end($ppwp)['total'][2],end($ppwp)['total'][3]);
         $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
         $pp1=0;$pp2=0;$pp3=0;$ppt=0;$ppt=0;$ppc=0;
         foreach($pp['result']['aggregated'] as $a => $b){
             $per=number_format((float)($b[0]['totalCompletedTps']/$b[0]['totalTps']*100),2,'.','');
-            $ppwp[$tm][$b[0]['name']]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
+            $ppwp[$tm][$prov[$a]]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
             $pp1+=$b[0]['pas1'];$pp2+=$b[0]['pas2'];$pp3+=$b[0]['pas3'];
             $ppt+=$b[0]['totalTps'];$ppc+=$b[0]['totalCompletedTps'];
         }
@@ -106,7 +82,35 @@ for($i=0;$i<1;$i++){
             echo "✅";
             $ppwp[$tm]['total']=array($pp1,$pp2,$pp3,$per);
             if(isset($pp['result']['aggregated'])){
-                    file_put_contents($path."/kp/$d.json", json_encode($ppwp,TRUE));
+                    file_put_contents($path."/kp/ppwp.json", json_encode($ppwp,TRUE));
+            }
+        }
+    }
+    foreach($prov as $c => $d){
+        $tm = time()*1000;
+        echo "\n".date('H:i:s')." $d ";
+        $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=$c");
+        $pp=json_decode($pp,TRUE);
+        if(isset($pp['result'])){
+            $file=file_get_contents($path."/kp/$d.json");
+            $ppwp=json_decode($file,true);
+            $ppwp[$tm]['total']=array(end($ppwp)['total'][0],end($ppwp)['total'][1],end($ppwp)['total'][2],end($ppwp)['total'][3]);
+            $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
+            $pp1=0;$pp2=0;$pp3=0;$ppt=0;$ppt=0;$ppc=0;
+            foreach($pp['result']['aggregated'] as $a => $b){
+                $per=number_format((float)($b[0]['totalCompletedTps']/$b[0]['totalTps']*100),2,'.','');
+                $ppwp[$tm][$b[0]['name']]=array($b[0]['pas1'],$b[0]['pas2'],$b[0]['pas3'],$per);
+                $pp1+=$b[0]['pas1'];$pp2+=$b[0]['pas2'];$pp3+=$b[0]['pas3'];
+                $ppt+=$b[0]['totalTps'];$ppc+=$b[0]['totalCompletedTps'];
+            }
+            $per=number_format((float)($ppc/$ppt*100),2,'.','');
+            $tol=$pp1+$pp2+$pp3;
+            if($tol!==$tlo || $pp1!==end($ppwp)['total'][0] || $pp2 !== end($ppwp)['total'][1] || $pp3 !== end($ppwp)['total'][2]){
+                echo "✅";
+                $ppwp[$tm]['total']=array($pp1,$pp2,$pp3,$per);
+                if(isset($pp['result']['aggregated'])){
+                        file_put_contents($path."/kp/$d.json", json_encode($ppwp,TRUE));
+                }
             }
         }
     }
