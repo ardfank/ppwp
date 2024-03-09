@@ -122,7 +122,7 @@ function tt(k){
 	$("#pos .isin").html("");
 	var ls = Object.keys(k).pop();
 	var ab = $('#kabss').val();
-	var ba = (cq=='ppwp')?'':$('#kab').val();
+	var ba = (cq=='ppwp')?'TOTAL':$('#kab').val();
 	$.each(k[ls],function(a,b){
 		var bx = (Object.values(b).reduce((acc, o) => acc + o, 0)-b.persen);
 		var pm=Math.max(...Object.values(b));
@@ -133,8 +133,8 @@ function tt(k){
 				var qa=(b[c]==pm)?" pq":"";
 				th+="<th>"+d+"<br/><span class='p"+qa+"'>"+pa+"%</span><br/>"+b[c].toLocaleString('id')+"</th>";
 			});
-			th+="<th>PROGRESS<br/><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</th>";
-			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>TOTAL</span><br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th>"+th+"</tr>");
+			// th+="<th>PROGRESS<br/><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</th>";
+			$("#pos thead").html("<tr><th>"+ba.toUpperCase()+"<br/><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"<br/>(<i>"+new Date(parseInt(ls)).toLocaleString('nl-NL')+"</i>)</th>"+th+"</tr>");
 		}else{
 			var td;
 			$.each(prt,function(c,d){
@@ -142,8 +142,8 @@ function tt(k){
 				var qa=(b[c]==pm)?" pq":"";
 				td+="<td data-sort='"+pa+"'><span class='p"+qa+"'>"+pa+"%</span><br/>"+b[c].toLocaleString('id')+"</td>";
 			});
-			td+="<td data-sort='"+b.persen+"'><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</td>";
-			$("#pos .isin").append("<tr><td><span style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span></td>"+td+"</tr>");
+			// td+="<td data-sort='"+b.persen+"'><span class='p'>"+b.persen+"%</span><br/>"+bx.toLocaleString('id')+"</td>";
+			$("#pos .isin").append("<tr><td><span class='p' style='cursor:pointer' onclick='ff(\""+a+"\")'>"+a+"</span><br/>"+b.persen+"%("+bx.toLocaleString('id')+")</td>"+td+"</tr>");
 		}
 	});
 	$("#pos table").DataTable({"paging": false,"dom": '<"top">'});
