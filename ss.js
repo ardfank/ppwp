@@ -221,7 +221,8 @@ function ckp(ab){
 	pp1=0;pp3=0;pp2=0;pc=0;pt=0;
 	$.ajax({url:"https://kp24-fd486.et.r.appspot.com/h?id="+ab+"&time="+tn,dataType:"json",success:function(res){
 		$.each(res.result.aggregated,function(a,b){
-			var kg=b[0].name;var p1=b[0].pas1;var p2=b[0].pas2;var p3=b[0].pas3;
+			var kg=b[0].name;kg=(kg=="LUAR NEGERI")?"Luar Negeri":kg;
+			var p1=b[0].pas1;var p2=b[0].pas2;var p3=b[0].pas3;
 			per=(b[0].totalCompletedTps/b[0].totalTps)*100;
 			kj[kg]=[p1,p2,p3,per.toFixed(2)];
 			pp1+=p1;pp3+=p3;pp2+=p2;pc+=b[0].totalCompletedTps;pt+=b[0].totalTps;
