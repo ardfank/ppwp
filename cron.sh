@@ -1,7 +1,7 @@
 #!/bin/bash
 shopt -s xpg_echo
 m=$(date +"%M")
-if [ $m -lt 5 ]; then
+if [ $m -lt 8 ]; then
 echo "===$(date) Start ===" > /mnt/log/game/ppwp/cron.log
 fi
 echo "===$(date) 1st ===" >> /mnt/log/game/ppwp/cron.log
