@@ -147,7 +147,7 @@ for($i=0;$i<1;$i++){
             }
         }
     }
-	echo "\n== KPU END ==\n\n== Partai START ==";
+	// echo "\n== KPU END ==\n\n== Partai START ==";
     echo "\n".date('H:i:s')." Partai ";
     $tm = time()*1000;
     $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");

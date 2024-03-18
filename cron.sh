@@ -4,7 +4,7 @@ m=$(date +"%M")
 if [ $m -lt 8 ]; then
 echo "===$(date) Start ===" > /mnt/log/game/ppwp/cron.log
 fi
-echo "===$(date) 1st ===" >> /mnt/log/game/ppwp/cron.log
+echo "\n\n===$(date) 1st ===" >> /mnt/log/game/ppwp/cron.log
 /usr/bin/php /mnt/log/game/ppwp/json/prov.php >> /mnt/log/game/ppwp/cron.log
 /usr/bin/git -C /mnt/log/game/ppwp/ pull origin main
 /usr/bin/git -C /mnt/log/game/ppwp/ add .
