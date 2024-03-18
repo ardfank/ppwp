@@ -115,6 +115,7 @@ for($i=0;$i<1;$i++){
     //     }
     // }
     // echo "\n== Kawal Pemilu END ==\n\n== KPU START ==";
+    echo "== KPU START ==";
     ppwp();
     foreach($prov as $c => $d){
         sleep(1);
