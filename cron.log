@@ -1,49 +1,9 @@
-===Tue Mar 19 03:05:01 AM WITA 2024 Start ===
+===Tue Mar 19 04:05:01 AM WITA 2024 Start ===
 
 
-===Tue Mar 19 03:05:01 AM WITA 2024 1st ===
+===Tue Mar 19 04:05:01 AM WITA 2024 1st ===
 == KPU START ==
-03:05:59 Partai 
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 20c8a605] Auto  Tuesday, 19-03-2024 03.06.04
- 1 file changed, 10 insertions(+), 52 deletions(-)
- rewrite cron.log (90%)
-To github.com:ardfank/ppwp.git
-   36be1ff2..20c8a605  main -> main
-
-
-===Tue Mar 19 03:20:01 AM WITA 2024 1st ===
-== KPU START ==
-03:20:59 Partai 
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main f769b948] Auto  Tuesday, 19-03-2024 03.21.04
- 1 file changed, 14 insertions(+)
-To github.com:ardfank/ppwp.git
-   20c8a605..f769b948  main -> main
-
-
-===Tue Mar 19 03:36:01 AM WITA 2024 1st ===
-== KPU START ==
-03:36:59 Partai 
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 0c2f5c6c] Auto  Tuesday, 19-03-2024 03.37.03
- 1 file changed, 13 insertions(+)
-To github.com:ardfank/ppwp.git
-   f769b948..0c2f5c6c  main -> main
-
-
-===Tue Mar 19 03:50:01 AM WITA 2024 1st ===
-== KPU START ==
-03:50:58 Partai ✅
+04:05:59 Partai 
 == Partai END ==
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
