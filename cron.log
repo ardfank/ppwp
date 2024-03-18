@@ -1,79 +1,10 @@
-===Mon Mar 18 10:05:01 PM WITA 2024 Start ===
-===Mon Mar 18 10:05:01 PM WITA 2024 1st ===
+===Mon Mar 18 11:05:01 PM WITA 2024 Start ===
 
-22:05:01 ppwp ✅
-22:05:17 JAWA TENGAH ✅
-22:05:32 LAMPUNG ✅
-== KPU END ==
 
-== Partai START ==
-22:06:03 Partai ✅
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main ef506551] Auto  Monday, 18-03-2024 22.06.08
- 5 files changed, 18 insertions(+), 198 deletions(-)
- rewrite cron.log (96%)
-To github.com:ardfank/ppwp.git
-   5d1880b4..ef506551  main -> main
-===Mon Mar 18 10:15:01 PM WITA 2024 1st ===
-
-22:15:01 ppwp 
-== KPU END ==
-
-== Partai START ==
-22:16:04 Partai 
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 67263a5c] Auto  Monday, 18-03-2024 22.16.08
- 1 file changed, 16 insertions(+)
-To github.com:ardfank/ppwp.git
-   ef506551..67263a5c  main -> main
-===Mon Mar 18 10:30:01 PM WITA 2024 1st ===
-
-22:30:01 ppwp 
-== KPU END ==
-
-== Partai START ==
-22:31:03 Partai ✅
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-   67263a5c..95d28bf5  main       -> origin/main
-Updating 67263a5c..95d28bf5
-Fast-forward
- json/prov.php | 1 +
- 1 file changed, 1 insertion(+)
-[main c77bcab8] Auto  Monday, 18-03-2024 22.31.08
- 2 files changed, 20 insertions(+), 1 deletion(-)
-To github.com:ardfank/ppwp.git
-   95d28bf5..c77bcab8  main -> main
-===Mon Mar 18 10:40:01 PM WITA 2024 1st ===
+===Mon Mar 18 11:05:01 PM WITA 2024 1st ===
 == KPU START ==
-22:40:01 ppwp ✅
-22:40:25 KALIMANTAN TENGAH ✅
-== KPU END ==
-
-== Partai START ==
-22:41:07 Partai 
-== Partai END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 9e456d01] Auto  Monday, 18-03-2024 22.41.12
- 3 files changed, 18 insertions(+), 2 deletions(-)
-To github.com:ardfank/ppwp.git
-   c77bcab8..9e456d01  main -> main
-===Mon Mar 18 10:50:01 PM WITA 2024 1st ===
-== KPU START ==
-22:50:01 ppwp 
-== KPU END ==
-
-== Partai START ==
-22:51:15 Partai 
+23:05:01 ppwp 
+23:06:03 Partai 
 == Partai END ==
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
