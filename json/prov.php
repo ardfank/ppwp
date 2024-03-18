@@ -38,7 +38,6 @@ function asu($url){
 function ppwp(){
     global $path,$prov,$cpp;
 	$tm = time()*1000;
-    echo "\n".date('H:i:s')." ppwp ";
 	$pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json");
 	$pp=json_decode($pp,TRUE);
     if(isset($pp['table']) && isset($pp['chart'])){
@@ -47,6 +46,7 @@ function ppwp(){
         $tol=$pp['chart'][100025]+$pp['chart'][100026]+$pp['chart'][100027];
         $tlo=end($ppwp)['total'][0]+end($ppwp)['total'][1]+end($ppwp)['total'][2];
         if($tol!==$tlo || $pp['chart'][100025]!==end($ppwp)['total'][0] || $pp['chart'][100026] !== end($ppwp)['total'][1] || $pp['chart'][100027] !== end($ppwp)['total'][2]){
+            echo "\n".date('H:i:s')." ppwp ";
             echo "✅";$cpp=1;
             $ppwp[$tm]['total']=array($pp['chart'][100025],$pp['chart'][100026],$pp['chart'][100027],$pp['chart']['persen']);
             foreach($pp['table'] as $a => $b){
