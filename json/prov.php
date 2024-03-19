@@ -115,7 +115,7 @@ for($i=0;$i<1;$i++){
     //     }
     // }
     // echo "\n== Kawal Pemilu END ==\n\n== KPU START ==";
-    echo "== KPU START ==";
+    echo "== START ==";
     ppwp();
     foreach($prov as $c => $d){
         sleep(1);
@@ -148,7 +148,6 @@ for($i=0;$i<1;$i++){
         }
     }
 	// echo "\n== KPU END ==\n\n== Partai START ==";
-    echo "\n".date('H:i:s')." Partai ";
     $tm = time()*1000;
     $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
     $dpl=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
@@ -168,6 +167,7 @@ for($i=0;$i<1;$i++){
         $ppwp=json_decode($file,true);
         $tol=array_sum($pp['chart']);
         if(array_sum(end($ppwp)['total'])-end($ppwp)['total']['persen']!=$tol){
+            echo "\n".date('H:i:s')." Partai ";
             echo "✅";
             foreach($pll as $il){
                 if($il=="persen"){
@@ -185,6 +185,6 @@ for($i=0;$i<1;$i++){
             file_put_contents("$path/partai.json", json_encode($ppwp,TRUE));
         }
     }
-    echo "\n== Partai END ==\n";
+    echo "\n== END ==\n";
 }
 ?>
