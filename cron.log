@@ -1,56 +1,10 @@
-===Wed Mar 20 11:05:01 PM WITA 2024 Start ===
+===Thu Mar 21 12:05:01 AM WITA 2024 Start ===
 
 
-===Wed Mar 20 11:05:01 PM WITA 2024 1st ===
+===Thu Mar 21 12:05:01 AM WITA 2024 1st ===
 == START ==
-23:05:02 ppwp ✅
-23:05:18 JAWA TENGAH ✅
-23:05:25 KALIMANTAN TENGAH ✅
-23:05:34 LAMPUNG ✅
-23:06:10 Partai ✅
-== END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 4457f652] Auto  Wednesday, 20-03-2024 23.06.13
- 6 files changed, 19 insertions(+), 60 deletions(-)
- rewrite cron.log (91%)
-To github.com:ardfank/ppwp.git
-   02a33198..4457f652  main -> main
-
-
-===Wed Mar 20 11:20:01 PM WITA 2024 1st ===
-== START ==
-== END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main bf612a83] Auto  Wednesday, 20-03-2024 23.21.08
- 1 file changed, 13 insertions(+)
-To github.com:ardfank/ppwp.git
-   4457f652..bf612a83  main -> main
-
-
-===Wed Mar 20 11:36:01 PM WITA 2024 1st ===
-== START ==
-23:36:02 ppwp ✅
-23:36:15 JAWA BARAT ✅
-23:36:17 JAWA TENGAH ✅
-23:36:23 KALIMANTAN TENGAH ✅
-23:37:01 Partai ✅
-== END ==
-From github.com:ardfank/ppwp
- * branch              main       -> FETCH_HEAD
-Already up to date.
-[main 9eefa18f] Auto  Wednesday, 20-03-2024 23.37.05
- 6 files changed, 22 insertions(+), 5 deletions(-)
-To github.com:ardfank/ppwp.git
-   bf612a83..9eefa18f  main -> main
-
-
-===Wed Mar 20 11:50:01 PM WITA 2024 1st ===
-== START ==
-23:51:01 Partai ✅
+00:05:01 ppwp ✅
+00:05:22 KALIMANTAN TENGAH ✅
 == END ==
 From github.com:ardfank/ppwp
  * branch              main       -> FETCH_HEAD
