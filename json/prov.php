@@ -30,7 +30,7 @@ function asu($url){
 
 	$result = curl_exec($ch);
 	if (curl_errno($ch)) {
-		echo 'Error Get Data Dari Kpu:' . curl_error($ch);
+		echo 'Error Get Data:' . curl_error($ch);
 	}
 	curl_close($ch);
 	return $result;
@@ -61,7 +61,6 @@ function ppwp(){
 for($i=0;$i<1;$i++){
     echo "\n== Kawal Pemilu START ==";
     $tm = time()*1000;
-    echo "\n".date('H:i:s')." KP ppwp ";
     $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=");
     $pp=json_decode($pp,TRUE);
     if(isset($pp['result'])){
@@ -79,6 +78,7 @@ for($i=0;$i<1;$i++){
         $per=number_format((float)($ppc/$ppt*100),2,'.','');
         $tol=$pp1+$pp2+$pp3;
         if($tol!==$tlo || $pp1!==end($ppwp)['total'][0] || $pp2 !== end($ppwp)['total'][1] || $pp3 !== end($ppwp)['total'][2]){
+            echo "\n".date('H:i:s')." KP ppwp ";
             echo "✅";
             $ppwp[$tm]['total']=array($pp1,$pp2,$pp3,$per);
             if(isset($pp['result']['aggregated'])){
@@ -88,7 +88,6 @@ for($i=0;$i<1;$i++){
     }
     foreach($prov as $c => $d){
         $tm = time()*1000;
-        echo "\n".date('H:i:s')." $d ";
         $pp=file_get_contents("https://kp24-fd486.et.r.appspot.com/h?id=$c");
         $pp=json_decode($pp,TRUE);
         if(isset($pp['result'])){
@@ -106,6 +105,7 @@ for($i=0;$i<1;$i++){
             $per=number_format((float)($ppc/$ppt*100),2,'.','');
             $tol=$pp1+$pp2+$pp3;
             if($tol!==$tlo || $pp1!==end($ppwp)['total'][0] || $pp2 !== end($ppwp)['total'][1] || $pp3 !== end($ppwp)['total'][2]){
+                echo "\n".date('H:i:s')." $d ";
                 echo "✅";
                 $ppwp[$tm]['total']=array($pp1,$pp2,$pp3,$per);
                 if(isset($pp['result']['aggregated'])){
@@ -114,7 +114,7 @@ for($i=0;$i<1;$i++){
             }
         }
     }
-    echo "\n== Kawal Pemilu END ==\n\n== KPU START ==";
+    echo "\n== KPU START ==";
     // echo "== START ==";
     ppwp();
     foreach($prov as $c => $d){
@@ -147,7 +147,7 @@ for($i=0;$i<1;$i++){
             }
         }
     }
-	// echo "\n== KPU END ==\n\n== Partai START ==";
+	echo "\n== Partai START ==";
     $tm = time()*1000;
     $pp=asu("https://sirekap-obj-data.kpu.go.id/pemilu/hhcd/pdpr/0.json");
     $dpl=asu("https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/pdpr/dapil_dpr.json");
